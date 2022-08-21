@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "Emaad's First Blog Post",
+            "title": "Emaad's First Jupyter Notebook",
             "content": "msg = &quot;Welcome to Jupyter Notebooks!&quot; print(msg) . Welcome to Jupyter Notebooks! .",
             "url": "https://emaad-mir.github.io/emaad-fastpages/jupyter/2022/08/20/first-nb.html",
             "relUrl": "/jupyter/2022/08/20/first-nb.html",
