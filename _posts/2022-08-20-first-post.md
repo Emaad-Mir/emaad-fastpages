@@ -5,4 +5,4 @@ categories: [markdown]
 title: My Very First Markdown Post!
 ---
 
-Computer science rocks!
+I am hoping to improve my understanding of various concepts in this class and be able to make more of these posts showing my progress.
