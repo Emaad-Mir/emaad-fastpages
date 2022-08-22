@@ -4,8 +4,4 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+Hello, my name is Emaad Mir and I am completely new to computer science. I am hoping that with time, I will be able to improve my skills in this field of study. Thanks for reading!
