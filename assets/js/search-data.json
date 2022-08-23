@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Emaad's First Jupyter Notebook",
-            "content": "msg = &quot;Welcome to Jupyter Notebooks!&quot; print(msg) . Welcome to Jupyter Notebooks! .",
+            "content": "msg = &quot;Welcome to Jupyter Notebooks!&quot; print(msg) . Welcome to Jupyter Notebooks! . My Cool Calculator! .",
             "url": "https://emaad-mir.github.io/emaad-fastpages/jupyter/2022/08/20/first-nb.html",
             "relUrl": "/jupyter/2022/08/20/first-nb.html",
             "date": " • Aug 20, 2022"
@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "Hello, my name is Emaad Mir and I am completely new to computer science. I am hoping that with time, I will be able to improve my skills in this field of study. Thanks for reading! .",
+          "content": "Hello, my name is Emaad Mir and I am completely new to computer science. I am hoping that with time, I will be able to improve my skills in this field of study. Thanks for reading! . .",
           "url": "https://emaad-mir.github.io/emaad-fastpages/about/",
           "relUrl": "/about/",
           "date": ""
