@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -177,6 +177,7 @@ window.onload = wrap_img;
 
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You said yes, so let&#39;s get started!&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">question_list</span><span class="p">)):</span>
         <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">question_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
         <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="n">answer_list</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
@@ -189,7 +190,7 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; which is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">correct</span> <span class="o">/</span> <span class="n">questions</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
 
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Come back when you&#39;re ready!&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You said no, so come back when you&#39;re ready!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -205,8 +206,9 @@ window.onload = wrap_img;
 <pre>Hello, root running /bin/python3
 You will be asked 6 questions.
 Question: Are you ready to take a test?
+You said yes, so let&#39;s get started!
 Question: What command is used to include other functions that were previously developed?
-def is incorrect! Sorry!
+import is correct! Yay!
 Question: What command is used to evaluate correct or incorrect response in this example?
 if is correct! Yay!
 Question: Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?
@@ -214,7 +216,7 @@ expression is correct! Yay!
 Question: What is the term used to describe a set of two or more lines of code?
 sequence is correct! Yay!
 Question: What is a key word used in Python to describe a function?
-def is correct! Yay!
+os is incorrect! Sorry!
 Question: What is the name of the library that we are importing this function from?
 os is correct! Yay!
 root you scored 5/6 which is 83.33333333333334%
