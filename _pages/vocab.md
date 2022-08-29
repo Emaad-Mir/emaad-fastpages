@@ -20,11 +20,14 @@ def - key term used to define a function in Python.
 
 
 ## AP CHEM:
-empirical formula - simplest whole number ratio of atoms in a compound
+empirical formula - simplest whole number ratio of atoms in a compound.
 ![]({{site.baseurl}}/images/cool_chem.png "https://github.com/Emaad-Mir/emaad-fastpages.git")
 
 ## AP CALC:
 Terms coming soon!
+limit - the y values that a function approaches as the function approaches a certain x value.
+![]({{site.baseurl}}/images/applying-limit-rules.png "https://github.com/Emaad-Mir/emaad-fastpages.git")
+
 
 ## AP WORLD:
 Terms coming soon!
