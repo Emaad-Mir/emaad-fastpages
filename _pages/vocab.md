@@ -21,6 +21,8 @@ def - key term used to define a function in Python.
 
 ## AP CHEM:
 Terms coming soon!
+empirical formula - simplest whole number ratio of atoms in a compound
+![]({{site.baseurl}}/images/cool_chem.png "https://github.com/Emaad-Mir/emaad-fastpages.git")
 
 ## AP CALC:
 Terms coming soon!
