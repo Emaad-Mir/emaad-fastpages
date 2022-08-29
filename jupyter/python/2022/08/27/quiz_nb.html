@@ -147,13 +147,13 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question:&quot;</span> <span class="o">+</span><span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Question:&quot;</span> <span class="o">+</span><span class="n">prompt</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer:&quot;</span> <span class="o">+</span><span class="n">msg</span><span class="p">)</span>
-
+<span class="c1">## defines the format of how the question will be asked</span>
 <span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">msg</span>
 
-<span class="n">question_list</span> <span class="o">=</span> <span class="p">[</span>
+<span class="n">question_list</span> <span class="o">=</span> <span class="p">[</span>   <span class="c1">## shows the list of questions that will be asked on the quiz</span>
     <span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">,</span>
     <span class="s2">&quot;What command is used to evaluate correct or incorrect response in this example?&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;</span><span class="p">,</span>
@@ -170,28 +170,32 @@ window.onload = wrap_img;
     <span class="s2">&quot;def&quot;</span><span class="p">,</span>
     <span class="s2">&quot;os&quot;</span>
 <span class="p">]</span>
-
+<span class="c1">## the number of questions being asked is equal to how many there are on the list</span>
 <span class="n">questions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">question_list</span><span class="p">)</span>
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 
+<span class="c1">## This is what the user will be prompted with before taking the quiz</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, &#39;</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; running &quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You will be asked &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; questions.&quot;</span><span class="p">)</span>
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Are you ready to take a test?&quot;</span><span class="p">)</span>
 
+<span class="c1">## If the user types in yes as their answer, the quiz will begin</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You said yes, so let&#39;s get started!&quot;</span><span class="p">)</span>
+ <span class="c1">## Depending on the question, if the answer the user inputted matches one of the answers on the list, they will get a message saying they are correct.</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">question_list</span><span class="p">)):</span>
         <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">question_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
         <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="n">answer_list</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct! Yay!&quot;</span><span class="p">)</span>
             <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="c1">## If the answer the user inputted doesn&#39;t match any of the answers on the list (again depending on question), they will get a message saying they are wrong.</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect! Sorry!&quot;</span><span class="p">)</span>
 
-
+<span class="c1">## After completing the quiz, the user will get their score out of 6 and the percentage</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; which is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">correct</span> <span class="o">/</span> <span class="n">questions</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
-
+<span class="c1">## If the user types in no to not being ready, the user will have this message</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You said no, so come back when you&#39;re ready!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -213,13 +217,13 @@ You said yes, so let&#39;s get started!
 Question: What command is used to include other functions that were previously developed?
 import is correct! Yay!
 Question: What command is used to evaluate correct or incorrect response in this example?
-if is correct! Yay!
+while is incorrect! Sorry!
 Question: Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?
 expression is correct! Yay!
 Question: What is the term used to describe a set of two or more lines of code?
 sequence is correct! Yay!
 Question: What is a key word used in Python to describe a function?
-os is incorrect! Sorry!
+def is correct! Yay!
 Question: What is the name of the library that we are importing this function from?
 os is correct! Yay!
 root you scored 5/6 which is 83.33333333333334%
