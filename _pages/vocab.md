@@ -2,6 +2,7 @@
 layout: default
 permalink: /vocab/
 title: Vocab
+comments: true
 search_exclude: true
 ---
 
@@ -29,7 +30,8 @@ limit - the y values that a function approaches as the function approaches a cer
 
 
 ## AP WORLD:
-Terms coming soon!
+civilization - the society, culture, and way of life of a certain area.
+![]({{site.baseurl}}/civilizations.jpg "https://github.com/Emaad-Mir/emaad-fastpages.git")
 
 
 
