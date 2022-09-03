@@ -154,13 +154,7 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">msg</span>
-
-<span class="n">qa_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">qa_list</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">&quot;Question&quot;</span><span class="p">:</span> <span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Answer&quot;</span><span class="p">:</span> <span class="s2">&quot;import&quot;</span>
-<span class="p">})</span>
-
+    
 <span class="n">question_list</span> <span class="o">=</span> <span class="p">[</span>   <span class="c1">## shows the list of questions that will be asked on the quiz</span>
     <span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">,</span>
     <span class="s2">&quot;What command is used to evaluate correct or incorrect response in this example?&quot;</span><span class="p">,</span>
@@ -235,6 +229,46 @@ def is correct! Yay!
 Question: What is the name of the library that we are importing this function from?
 os is correct! Yay!
 root you scored 5/6 which is 83.33333333333334%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">qa_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">qa_list</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">&quot;Question&quot;</span><span class="p">:</span> <span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Answer&quot;</span><span class="p">:</span> <span class="s2">&quot;import&quot;</span>
+<span class="p">})</span>
+
+<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">qa_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="s2">&quot;Question&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="s2">&quot;Answer&quot;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What command is used to include other functions that were previously developed?
+import
 </pre>
 </div>
 </div>
