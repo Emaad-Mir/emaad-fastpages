@@ -9,6 +9,7 @@ search_exclude: true
     <tr>
         <th>Week</th>
         <th>Unit</th>
+        <th>Review Tickets</th>
     </tr>
 
     {% assign length = (site.weekly_units.size - 1) %}
@@ -17,6 +18,7 @@ search_exclude: true
     <tr>
         <td>{{ i }}</td>
         <td>{{ site.weekly_units[i] }}</td>
+        <td><a href="{{ site.review_ticket_links[i] }}">Review Ticket</a></td>
     </tr>
     {% endfor %}
 </table>

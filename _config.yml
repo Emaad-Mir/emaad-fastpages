@@ -82,6 +82,12 @@ html_escape:
 
 
 weekly_units: [tool setup, intro to python, data abstraction, creative development]
+review_ticket_links: [
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/2, 
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/2,
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/2,
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/2
+]
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
