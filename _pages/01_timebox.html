@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /timebox/
+title: Time Box
+search_exclude: true
+---
+
+<table>
+    <tr>
+        <th>Week</th>
+        <th>Unit</th>
+    </tr>
+
+    {% assign length = (site.weekly_units.size - 1) %}
+
+    {% for i in (0..length) %}
+    <tr>
+        <td>{{ i }}</td>
+        <td>{{ site.weekly_units[i] }}</td>
+    </tr>
+    {% endfor %}
+</table>
