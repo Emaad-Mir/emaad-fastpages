@@ -2,7 +2,7 @@
 layout: post
 description: A blog post demonstrating what happened when I tried to change the theme of my web page from minima to another supported theme.
 categories: [markdown, week2]
-title: Dark Mode Theme
+title: My Attempt at Changing the Remote Theme
 image: /images/dark-mode.jpg
 ---
 
