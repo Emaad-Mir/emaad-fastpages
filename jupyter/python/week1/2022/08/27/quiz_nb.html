@@ -10,8 +10,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This quiz covers topics involving Python and a bunch of other cool computer science stuff!" />
 <meta property="og:description" content="This quiz covers topics involving Python and a bunch of other cool computer science stuff!" />
-<link rel="canonical" href="https://emaad-mir.github.io/emaad-fastpages/jupyter/python/2022/08/27/quiz_nb.html" />
-<meta property="og:url" content="https://emaad-mir.github.io/emaad-fastpages/jupyter/python/2022/08/27/quiz_nb.html" />
+<link rel="canonical" href="https://emaad-mir.github.io/emaad-fastpages/jupyter/python/week1/2022/08/27/quiz_nb.html" />
+<meta property="og:url" content="https://emaad-mir.github.io/emaad-fastpages/jupyter/python/week1/2022/08/27/quiz_nb.html" />
 <meta property="og:site_name" content="Emaad’s fastpages" />
 <meta property="og:image" content="https://emaad-mir.github.io/emaad-fastpages/images/python_image.jpg" />
 <meta property="og:type" content="article" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://emaad-mir.github.io/emaad-fastpages/images/python_image.jpg" />
 <meta property="twitter:title" content="It’s Quiz Time!" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-27T00:00:00-05:00","datePublished":"2022-08-27T00:00:00-05:00","description":"This quiz covers topics involving Python and a bunch of other cool computer science stuff!","headline":"It’s Quiz Time!","image":"https://emaad-mir.github.io/emaad-fastpages/images/python_image.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://emaad-mir.github.io/emaad-fastpages/jupyter/python/2022/08/27/quiz_nb.html"},"url":"https://emaad-mir.github.io/emaad-fastpages/jupyter/python/2022/08/27/quiz_nb.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-27T00:00:00-05:00","datePublished":"2022-08-27T00:00:00-05:00","description":"This quiz covers topics involving Python and a bunch of other cool computer science stuff!","headline":"It’s Quiz Time!","image":"https://emaad-mir.github.io/emaad-fastpages/images/python_image.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://emaad-mir.github.io/emaad-fastpages/jupyter/python/week1/2022/08/27/quiz_nb.html"},"url":"https://emaad-mir.github.io/emaad-fastpages/jupyter/python/week1/2022/08/27/quiz_nb.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/emaad-fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://emaad-mir.github.io/emaad-fastpages/feed.xml" title="Emaad's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/emaad-fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -92,6 +92,9 @@ window.onload = wrap_img;
         &nbsp;
       
         <a class="category-tags-link" href="/emaad-fastpages/categories/#python">python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/emaad-fastpages/categories/#week1">week1</a>
         
       
       </p>
@@ -219,16 +222,16 @@ You said yes, so let&#39;s get started!
 Question: What command is used to include other functions that were previously developed?
 import is correct! Yay!
 Question: What command is used to evaluate correct or incorrect response in this example?
-while is incorrect! Sorry!
+m is incorrect! Sorry!
 Question: Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?
-expression is correct! Yay!
+k is incorrect! Sorry!
 Question: What is the term used to describe a set of two or more lines of code?
-sequence is correct! Yay!
+l is incorrect! Sorry!
 Question: What is a key word used in Python to describe a function?
-def is correct! Yay!
+l is incorrect! Sorry!
 Question: What is the name of the library that we are importing this function from?
 os is correct! Yay!
-root you scored 5/6 which is 83.33333333333334%
+root you scored 2/6 which is 33.33333333333333%
 </pre>
 </div>
 </div>
@@ -252,27 +255,15 @@ root you scored 5/6 which is 83.33333333333334%
     <span class="s2">&quot;Answer&quot;</span><span class="p">:</span> <span class="s2">&quot;import&quot;</span>
 <span class="p">})</span>
 
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+
 <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">qa_list</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="s2">&quot;Question&quot;</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="s2">&quot;Answer&quot;</span><span class="p">])</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="s2">&quot;Question&quot;</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">response</span> <span class="o">==</span> <span class="n">q</span><span class="p">[</span><span class="s2">&quot;Answer&quot;</span><span class="p">]:</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>What command is used to include other functions that were previously developed?
-import
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -291,7 +282,7 @@ import
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/emaad-fastpages/jupyter/python/2022/08/27/quiz_nb.html" hidden></a>
+</script><a class="u-url" href="/emaad-fastpages/jupyter/python/week1/2022/08/27/quiz_nb.html" hidden></a>
 </article>
 
       </div>
