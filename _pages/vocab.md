@@ -2,6 +2,7 @@
 layout: default
 permalink: /vocab/
 title: Vocab
+categories: [studytools]
 comments: true
 search_exclude: true
 ---
