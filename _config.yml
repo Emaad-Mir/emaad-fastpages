@@ -81,7 +81,7 @@ html_escape:
   description: false
 
 
-weekly_units: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
+weekly_sprints: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
 review_ticket_links: [
   https://github.com/Emaad-Mir/emaad-fastpages/issues/2#issue-1345673130, 
   https://github.com/Emaad-Mir/emaad-fastpages/issues/3#issue-1353514214,

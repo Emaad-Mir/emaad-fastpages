@@ -4,11 +4,12 @@ permalink: /timebox/
 title: Time Box
 search_exclude: true
 ---
-<h2>Trimester 1</h2>
+<h1>Trimester 1</h1>
+<h2>Unit 1: Introduction to Tools and Resources</h2>
 <table>
     <tr>
         <th>Week</th>
-        <th>Unit</th>
+        <th>Sprint</th>
         <th>Review Tickets</th>
     </tr>
 
@@ -17,7 +18,7 @@ search_exclude: true
     {% for i in (0..length) %}
     <tr>
         <td>{{ i }}</td>
-        <td>{{ site.weekly_units[i] }}</td>
+        <td>{{ site.weekly_sprints[i] }}</td>
         <td><a href="{{ site.review_ticket_links[i] }}">Review Ticket Week {{ i }}</a></td>
     </tr>
     {% endfor %}
