@@ -13,9 +13,9 @@ search_exclude: true
         <th>Review Tickets</th>
     </tr>
 
-    {% assign length = (site.weekly_sprints.size - 1) %}
+    {% assign week_number = 3 %}
 
-    {% for i in (0..length) %}
+    {% for i in (0..week_number) %}
     <tr>
         <td>{{ i }}</td>
         <td>{{ site.weekly_sprints[i] }}</td>
