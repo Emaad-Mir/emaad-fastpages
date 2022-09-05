@@ -4,6 +4,7 @@ description: A blog post demonstrating what happened when I tried to change the 
 categories: [markdown, week2]
 title: My Attempt at Changing the Remote Theme
 image: /images/dark-mode.jpg
+comments: true
 ---
 
 By default, your web page has the theme minima as shown in the image below in config.yml:
