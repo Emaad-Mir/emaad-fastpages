@@ -11,21 +11,15 @@ By default, your web page has the theme minima as shown in the image below in co
 
 ![]({{site.baseurl}}/images/config-file.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
-The minima theme is okay, but I wanted to try something different to spice up my web page a little bit. I did this by looking for supported themes I could switch to and changing the jekyll theme from minima to hacker:
+The minima theme is okay, but I wanted to try something different to spice up my web page a little bit. I did this by looking for supported themes I could switch to and changing the jekyll theme from minima to midnight:
 
-![]({{site.baseurl}}/images/theme-change.png "https://github.com/Emaad-Mir/emaad-fastpages")
+![]({{site.baseurl}}/images/proof.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
-However, when I went onto GitHub to see if my commit went through, I saw this error:
+However, when I went onto my web page to see the results, I got this:
 
-![]({{site.baseurl}}/images/fail.png "https://github.com/Emaad-Mir/emaad-fastpages")
+![]({{site.baseurl}}/images/results.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
-I looked into the error, and it turned out that it involved something called Jekyll build. This was what the comment "Everything below here should be left alone. Modifications may break fastpages" was trying to warn me about. 
-
-![]({{site.baseurl}}/images/comment.jpg "https://github.com/Emaad-Mir/emaad-fastpages")
-
-
-I now realize that any changes that I try to implement into this area of the config.yml file, whether it is a theme change or something else, will result in the errors like the ones I experienced. 
-
+As you can see, all of the links that I had on the top right of the web page (about me, tags, vocab etc.) completely disappeared. The only button that you can see is the "View on GitHub" button. Changing the remote theme also altered the way my posts were displayed on my blog. 
 
 
 
