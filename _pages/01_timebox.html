@@ -11,6 +11,7 @@ search_exclude: true
         <th>Week</th>
         <th>Sprint</th>
         <th>Review Tickets</th>
+        <th>Summary</th>
     </tr>
 
     {% assign week_number = 3 %}
@@ -20,6 +21,7 @@ search_exclude: true
         <td>{{ i }}</td>
         <td>{{ site.weekly_sprints[i] }}</td>
         <td><a href="{{ site.review_ticket_links[i] }}">Review Ticket Week {{ i }}</a></td>
+        <td>{{ site.weekly_summaries[i] }}</td>
     </tr>
     {% endfor %}
 </table>
