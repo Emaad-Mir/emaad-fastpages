@@ -88,9 +88,13 @@ review_ticket_links: [
   https://github.com/Emaad-Mir/emaad-fastpages/issues/6#issue-1361390571,
 ]
 weekly_summaries: [
-  We focused on installing tools., 
-  We made our own quiz with Python and installed the bash kernel.,
-  We used lists and dictionaries to collect information that we defined.
+  We installed tools like Anaconda and Python and started building our Fastpages blogs. 
+  The hacks for this week were to post our first markdown post and jupyter notebook.,
+  We started to learn more about Python and used what was taught to make our own quiz that had questions pertaining to what we learned. 
+  We also installed the bash kernel and made a notebook that demonstrated all necessary tools functioning.,
+  We began working with lists and dictionaries in Python. Both of these are used to collect specific information. We were also introduced
+  to HTML fragments and learned how they are used in well-known websites like Amazon. Using our knowledge of all of these concepts we had to
+  show several looping algorithms and demonstrate what happened when we tried to change the remote theme of the blog.
 ]
 
 # Everything below here should be left alone. Modifications may break fastpages
