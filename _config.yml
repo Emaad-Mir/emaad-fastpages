@@ -88,9 +88,9 @@ review_ticket_links: [
   https://github.com/Emaad-Mir/emaad-fastpages/issues/6#issue-1361390571,
 ]
 weekly_summaries: [
-  In Week 0, we focused on installing tools.
-  In Week 1, we made our own quiz with Python and installed the bash kernel.
-  In Week 2, we used lists and dictionaries to collect information that we defined.
+  We focused on installing tools., 
+  We made our own quiz with Python and installed the bash kernel.,
+  We used lists and dictionaries to collect information that we defined.
 ]
 
 # Everything below here should be left alone. Modifications may break fastpages
