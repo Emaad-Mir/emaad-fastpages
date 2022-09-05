@@ -1,7 +1,7 @@
 ---
 layout: post
 description: A blog post demonstrating what happened when I tried to change the theme of my web page from minima to another supported theme.
-categories: [markdown, week2]
+categories: [markdown, week2hacks]
 title: My Attempt at Changing the Remote Theme
 image: /images/dark-mode.jpg
 comments: true
@@ -20,6 +20,7 @@ However, when I went onto my web page to see the results, I got this:
 ![]({{site.baseurl}}/images/results.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
 As you can see, all of the links that I had on the top right of the web page (about me, tags, vocab etc.) completely disappeared. The only button that you can see is the "View on GitHub" button. Changing the remote theme also altered the way my posts were displayed on my blog. 
+
 
 
 

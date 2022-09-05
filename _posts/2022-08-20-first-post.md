@@ -1,7 +1,7 @@
 ---
 layout: post
 description: This is my very first markdown post!
-categories: [markdown, week0]
+categories: [markdown, week0hacks]
 title: My Very First Markdown Post!
 image: /images/markdown.png
 ---
