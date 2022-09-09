@@ -1,7 +1,6 @@
 ---
 layout: post
-description: Here are some ideas I have for my quiz on code.org. Not all of these ideas will be incorporated into the quiz,
-but some of them will be helpful in establishing the final product. I hope this inspires others to be creative with their project!
+description: Below are some ideas I have for my code.org quiz. I hope this inspires people to be creative! 
 categories: [markdown, week3hacks]
 title: Code.Org Quiz Outline
 image: /images/dark-mode.jpg
