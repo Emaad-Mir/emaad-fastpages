@@ -8,7 +8,7 @@ image: /images/dark-mode.jpg
 comments: true
 ---
 
-# Ideas for the Topic of Ky Quiz
+# Ideas for the Topic of My Quiz
 
 -Something I could use as a study tool for another class (calc, chem, etc.)
 -Quiz about random famous people
