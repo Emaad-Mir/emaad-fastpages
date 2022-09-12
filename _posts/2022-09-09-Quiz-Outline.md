@@ -36,6 +36,21 @@ While my quiz does follow some of the requirements of the CPT, it doesn't necess
 - Functionality: When the user clicks the start button to begin the quiz, they will be shown one question at a time, with a total of four questions in the entire quiz. Each question is a different type: clicking on an image to choose an answer, clicking on a radio button, typing something into a text box, and clicking on a button. If the user gets a question correct, they will have a screen popping up informing them that they answered correctly and will have a point added to their score (predefined as a variable equal to 0). If the user gets a question wrong, they will have a screen that says they chose the wrong answer and will have no points taken away from or added to their score. At the end, the user will have their final score displayed.
 - Input/Output: For this quiz, the input is the answer the user clicks on/types in. The output is if they answered correctly or not, which is shown by the screen that displays after they have answered the question. 
 
+2. Data Abstraction
+
+All of the points that a user earned from the quiz is stored in a variable called score, and while I did not include any lists, I definitely could refine my quiz more by incorporating dictionaries and lists.
+
+3. Managing Complexity
+
+One way that my quiz could manage complexity is to store all of the possible answers for each question into their own functions, and add iterations that classify an answer as right or wrong. This way, I won't have to repeat the same lines of code over and over again.
+
+4. Procedural Abstraction
+
+I can make my code so that depending on what the user has inputted, a specific part of the code will be ran. 
+
+5. Algorithm Implementation
+
+My quiz uses sequencing, selecting, and iterating in order to form an algorithm involving the quiz that someone else could use and incorporate into their own quiz or game.
 
 6. Testing
 - I tested this quiz multiple times, both in the process of creating the quiz and even after I fully programmed it. For the first call, I made it so that the user got a specific question wrong and got the other two correct, therefore displaying a final score of 2 out of 3. For the second call, I made it so that the user got two questions wrong and one correct, giving a final score of 1 out of 3. 
