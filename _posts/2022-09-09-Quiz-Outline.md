@@ -25,6 +25,8 @@ I might even try to design a game rather than a quiz on Code.org. We'll have to 
 # Final Product (9/11)
 I made my quiz about space and was able to show the user's final score and if they answered a question correctly or incorrectly. While I was successful in programming the quiz, there were a few obstacles that I faced along the way. For example, since I added a lot of text to each of my screens, if I ever was trying to edit a specific label, it would be difficult for me to scroll through all of my labels before finding the desired one. I also had a difficult time organizing my code so that it was more readable, as I completely forgot about dividing my code into sections until after I finished the program. Overall, while I did have a few issues in desigining this program, I still managed to successfully produce a quiz that can help a user learn something new about space.
 
+<iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/g4jp2S-1y00sUwCwfmlBvHQuykI7a4niJsQ5_keyiiQ/embed"></iframe>
+
 # Relating My Quiz to the Create Performance Task Rubric
 
 While my quiz does follow some of the requirements of the CPT, it doesn't necessarily meet all of them. However, if I can refine this quiz, I can definitely make it so that it meets all requirements for the CPT. Below are the few parts of the rubric that I think my quiz has:
