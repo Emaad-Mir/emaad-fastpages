@@ -4,7 +4,7 @@ layout: post
 description: Below are some ideas I have for my code.org quiz. Additionally, there is also a little overview of how the quiz does meet some of the rubric for the Create Performance Task part of the AP exam.
 categories: [markdown, week3hacks]
 title: Code.Org Quiz Outline
-image: /images/dark-mode.jpg
+image: /images/space.png
 comments: true
 ---
 
