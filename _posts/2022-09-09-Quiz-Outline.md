@@ -29,9 +29,10 @@ I made my quiz about space and was able to show the user's final score and if th
 
 # Relating My Quiz to the Create Performance Task Rubric
 
-While my quiz does follow some of the requirements of the CPT, it doesn't necessarily meet all of them. However, if I can refine this quiz, I can definitely make it so that it meets all requirements for the CPT. Below are the few parts of the rubric that I think my quiz has:
+While my quiz does follow some of the requirements of the CPT, it doesn't necessarily meet all of them. However, if I can refine this quiz, I can definitely make it so that it meets all requirements for the CPT. Below are some connections to each of the components of the Create Performance Task Rubric:
 
- # Program Purpose and Function
+# Program Purpose and Function
+
 -  Purpose: The purpose of the function is to test a user's knowledge on specific facts about space and NASA. In addition, the quiz is also intended to teach the user something that they may not have known about before taking the quiz.
 - Functionality: When the user clicks the start button to begin the quiz, they will be shown one question at a time, with a total of four questions in the entire quiz. Each question is a different type: clicking on an image to choose an answer, clicking on a radio button, typing something into a text box, and clicking on a button. If the user gets a question correct, they will have a screen popping up informing them that they answered correctly and will have a point added to their score (predefined as a variable equal to 0). If the user gets a question wrong, they will have a screen that says they chose the wrong answer and will have no points taken away from or added to their score. At the end, the user will have their final score displayed.
 - Input/Output: For this quiz, the input is the answer the user clicks on/types in. The output is if they answered correctly or not, which is shown by the screen that displays after they have answered the question. 
