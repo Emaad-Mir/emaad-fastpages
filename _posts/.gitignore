@@ -1,1 +1,11 @@
-
+# Ignore from local build
+settings.ini
+Gemfile.lock
+images/copied_from_nb/
+2022-08-20-first-nb.md
+2022-08-25-bash.md
+2022-08-27-quiz_nb.md
+2022-08-29-AP-Chem-Lab-.md
+2022-08-29-Takeaways-From-Alumni-Panel.md
+2022-08-29-TP120-python_lists.md
+2022-09-14-lists-and-dictionaries.md
