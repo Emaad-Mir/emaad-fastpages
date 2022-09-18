@@ -102,6 +102,20 @@ weekly_summaries: [
   programs that can perform astonishing tasks. 
 ]
 
+weekly_sprints2: [Python Web Server Project, TBD, TBD, TBD]
+review_ticket_links2: [
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/2#issue-1345673130, 
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/3#issue-1353514214,
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/6#issue-1361390571,
+  https://github.com/Emaad-Mir/emaad-fastpages/issues/12#issue-1369107749
+]
+weekly_summaries2: [
+TBD,
+TBD,
+TBD,
+TBD  
+]
+
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima
