@@ -15,8 +15,13 @@ comments: true
 - Our life circumstances don't matter as much as we think they do
 - **intuitions** - ability to understand something right away without the need for conscious reasoning
 - Like all good things, taking control of your happiness can be difficult
-- G.I. Joe fallacy - refers to the misconception that simply knowing about a bias is enough to overcome it
+- **G.I. Joe fallacy** - refers to the misconception that simply knowing about a bias is enough to overcome it
 - Often, your mind lies to you a lot about what it means to be happy
+- Making time for social connections is something that very happy people do in general
+- Helping others helps us more than we expect
+- The simple act of thinking about what we are grateful for is very powerful
+- **affluence** - the state of having a great deal of money (wealth)
+- Happy people usually priortize their leisure time over money
 
 # Notes of Gratitude
 - I am grateful for all of the teachers that work so hard to make sure that we all succeed and be the best that we can in the future
