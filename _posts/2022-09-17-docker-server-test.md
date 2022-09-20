@@ -7,4 +7,3 @@ title: Docker Server Test
 image: /images/docker.png
 comments: true
 ---
-hello!
