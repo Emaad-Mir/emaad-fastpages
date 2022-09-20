@@ -8,8 +8,3 @@ image: /images/docker.png
 comments: true
 ---
 hi!
-hi!
-hi!
-hi!
-hi!
-hi!
