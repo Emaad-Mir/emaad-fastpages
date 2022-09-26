@@ -1,0 +1,13 @@
+---
+toc: true
+layout: post
+permalink: /js/html
+description: Here is a table that I made with JavaScript and HTML Fragments!
+categories: [markdown, week5hacks]
+title: JavaScript Fragments
+image: /images/
+comments: true
+---
+# Scrum Team
+
+{% include javascript-table.html %}
