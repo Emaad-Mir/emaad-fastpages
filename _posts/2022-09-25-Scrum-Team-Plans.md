@@ -4,7 +4,7 @@ layout: post
 description: This post has the scrum team outline with everyone's roles as well as plans for the final project. 
 categories: [markdown, week5hacks]
 title: Scrum Team Plans
-image: /images/
+image: /images/sprintmodel.png
 comments: true
 ---
 

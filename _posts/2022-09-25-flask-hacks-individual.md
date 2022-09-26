@@ -4,7 +4,7 @@ layout: post
 description: Here is a post showing the customization of my index and stub pages on the python flask server.
 categories: [markdown, week5hacks]
 title: Python Flask (Individual)
-image: /images/
+image: /images/flask-logo.png
 comments: true
 ---
 
