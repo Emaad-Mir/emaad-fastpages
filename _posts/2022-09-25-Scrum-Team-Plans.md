@@ -8,6 +8,19 @@ image: /images/
 comments: true
 ---
 
+# Team Roles
+- Scrum Master: Emaad Mir
+- DevOps: Luka Van Den Booman
+- Frontend Developer: Edwin Abraham
+- Backend Developer: Jishnu Singiresu
+        
+# Program Idea/Purpose
+Our idea for the final project is to make a program that allows users to make a list of things that they would like to do so that the computer can compile that list into a coherent daily agenda.
+
+# Our Scrum Process
+
+Here is a Canva poster that we all made together displaying our Scrum Team roles and the steps that we will take to work together.
+
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
@@ -16,3 +29,12 @@ comments: true
   </iframe>
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFNFD-Iypk&#x2F;view?utm_content=DAFNFD-Iypk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Scrum Team Process - Emaad Mir, Edwin Abraham, Luka Van Den Boomen, Jishnu Singiresu
+
+# Scrum Team Plans on Group Repo
+My group and I also made our team plans show up on a new html page called plan:
+
+![]({{site.baseurl}}/images/abcd.png "https://github.com/Emaad-Mir/emaad-fastpages")
+
+
+
+
