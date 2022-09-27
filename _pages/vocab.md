@@ -12,6 +12,7 @@ search_exclude: true
 # Vocab Terms/Study Tools (for both APCSP and other classes!)
 
 ## APCSP:
+
 Import - Command used to include other functions that were previously developed.
 
 if statement - conditional statement that tells the computer what to perform when given certain information.
@@ -19,6 +20,10 @@ if statement - conditional statement that tells the computer what to perform whe
 sequence - term used to describe a set of two or more lines of code.
 
 def - key term used to define a function in Python.
+
+PBL Vocab:
+
+
 
 
 ## AP CHEM:
