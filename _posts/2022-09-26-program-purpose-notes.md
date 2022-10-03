@@ -139,3 +139,6 @@ Description
 # Personal Takeways
 
 After watching all three videos, I feel that I truly understand why knowing the purpose and function of a program is essential. Knowing exactly what your program is intended to do could allow someone who is reading it to use it in a larger program or even expand upon it. Overall, having knowledge about this big idea will definitely be helpful and I will apply this idea to anything that I do in this class. 
+
+# Proof of Completon of Quesitons
+

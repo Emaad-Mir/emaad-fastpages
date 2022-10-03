@@ -57,3 +57,6 @@ comments: true
 # Personal Takeways
 
 Watching these videos definitely opened my mind to how crucial collaboration is, especially in a field like computer science. I hope that from now on, my team and I will be able to communicate with each other and help each other no matter the circumstances.
+
+# Proof of Completon of Quesitons
+
