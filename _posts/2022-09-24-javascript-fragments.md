@@ -9,5 +9,6 @@ image: /images/fragments.png
 comments: true
 ---
 # Scrum Team
+{% include nav_frontend.html %}
 
 {% include javascript-table.html %}
