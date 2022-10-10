@@ -84,3 +84,9 @@ comments: true
 # Personal Takeways
 
 After watching all of the daily videos, I now realize how important testing is and how it can be applied to identifying and correcting errors in an algorithm or program. With this in mind, I will apply these important points to the final project that we will have to produce as a team
+
+# MCQ Results
+
+![]({{site.baseurl}}/images/proofofcompletion.png "https://github.com/Emaad-Mir/emaad-fastpages")
+
+I earned a 100% on this quiz, which demonstrates that I have a great understanding of identifying and correcting errors in a program or algorithm.
