@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: This post has the scrum team outline with everyone's roles as well as plans for the final project. 
+description: This post has notes that I took from the videos about identifying and correcting errors, as well as some things that I took away from watching them.
 categories: [markdown, week5hacks]
 title: 1.4 Collegeboard Notes
 image: /images/sprintmodel.png
