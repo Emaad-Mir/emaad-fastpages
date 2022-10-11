@@ -227,7 +227,7 @@ drink  $0.99
     <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span> <span class="c1"># If the user orders an item on the menu, the cost of that item will be added to the total cost</span>
         <span class="n">total</span><span class="o">+=</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>           <span class="c1"># if a user tries to order something that is not on the menu, the code will immediately exit</span>
         <span class="n">order</span> <span class="o">=</span> <span class="kc">False</span>
         
@@ -250,9 +250,7 @@ burger  $3.99
 fries  $1.99
 drink  $0.99
 3.99
-5.98
-6.970000000000001
-Have a nice day!
+4.98
 </pre>
 </div>
 </div>
