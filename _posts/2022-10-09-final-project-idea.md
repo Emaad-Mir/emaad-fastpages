@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: This post has an outline of the design of our program for our final project.
 categories: [markdown, week7hacks]
-title: Final Project - Program Design 
+title: Daily Agenda Project Design
 image: /images/sprintmodel.png
 comments: true
 ---
@@ -13,9 +13,9 @@ comments: true
 
 We want to make a program in which a user can enter activites that they would like to do for specific days on a calendar. 
 
-# My Idea and the CPT Rubric
+# Our Idea and the Collegeboard Rubric
 
-Here is how we plan for my program to meet each component of the rubric:
+Here is how we plan for our program to meet each component of the rubric:
 
 # Row 1: Program Purpose and Function
 The purpose of this program is to allow the user to type in any events or activittes that they would like to do for the day so that the computer can complie that list into a coherent daily agenda. This program is also intended to encourage organization, for it stores the list of activites into a day on the calendar.
