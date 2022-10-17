@@ -4,7 +4,7 @@ layout: post
 description: This post has notes that I took from the videos about identifying and correcting errors, as well as some things that I took away from watching them.
 categories: [markdown, week5hacks]
 title: 1.4 Collegeboard Notes
-image: /images/sprintmodel.png
+image: /images/college-board-logo.png
 comments: true
 ---
 
