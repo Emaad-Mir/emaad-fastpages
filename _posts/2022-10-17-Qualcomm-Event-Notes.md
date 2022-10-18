@@ -4,7 +4,7 @@ layout: post
 description: This post has notes and lessons that I learned from the Qualcomm event. 
 categories: [extra]
 title: Qualcomm Operations Event Notes/Lessons Learned
-image: /images/college-board-logo.png
+image: /images/Qualcomm-Logo.png
 comments: true
 ---
 
