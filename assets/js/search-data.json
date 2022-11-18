@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Decimal to Binary Python Program",
-            "content": "decimal = int(input(&quot;Please enter a decimal value: n&quot;)) choice = int(input(&quot;What would you like to convert the decimal to? [1] Binary [2] Octal [3] Hexadecimal: n&quot;)) # if statements that convert the decimal into binary, octal, or hexadecimal depending on what number the user inputs if choice == 1: print(&quot;{x} in Binary is {y}&quot;.format(x=decimal,y=bin(decimal)[2:])) elif choice == 2: print(&quot;{x} in Octal is {y}&quot;.format(x=decimal,y=oct(decimal))) elif choice == 3: print(&quot;{x} in Hexadecimal is {y}&quot;.format(x=decimal,y=hex(decimal))) #if the user tries to choose a number that is not one of the choice, this message will appear else: print(&quot;Input Invalid. Please try again.&quot;) print(&quot;All Done!&quot;) . 71 in Binary is 1000111 All Done! .",
+            "content": "decimal = int(input(&quot;Please enter a decimal value: n&quot;)) choice = int(input(&quot;What would you like to convert the decimal to? [1] Binary [2] Octal [3] Hexadecimal: n&quot;)) # if statements that convert the decimal into binary, octal, or hexadecimal depending on what number the user inputs if choice == 1: print(&quot;{x} in Binary is {y}&quot;.format(x=decimal,y=bin(decimal)[2:])) elif choice == 2: print(&quot;{x} in Octal is {y}&quot;.format(x=decimal,y=oct(decimal)[2:])) elif choice == 3: print(&quot;{x} in Hexadecimal is {y}&quot;.format(x=decimal,y=hex(decimal)[2:])) #if the user tries to choose a number that is not one of the choice, this message will appear else: print(&quot;Input Invalid. Please try again.&quot;) print(&quot;All Done!&quot;) . 71 in Binary is 1000111 All Done! .",
             "url": "https://emaad-mir.github.io/emaad-fastpages/jupyter/python/week1hacks/2022/11/18/decimal-to-binary-program.html",
             "relUrl": "/jupyter/python/week1hacks/2022/11/18/decimal-to-binary-program.html",
             "date": " • Nov 18, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Binary Math",
-            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Character Minus . +1 | 00000000 | 0 | 0 | 0 | NULL | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | | | | | | | | | | | | | | | | | . 2^23 2^22 2^21 2^20 2^19 2^18 2^17 2^16 2^15 2^14 2^13 2^12 2^11 2^10 2^9 2^8 2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 .",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Base 4 Character Minus . +1 | 00000000 | 0 | 0 | 0 | 0 | NULL | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | | | | | | | | | | | | | | | | | . 2^23 2^22 2^21 2^20 2^19 2^18 2^17 2^16 2^15 2^14 2^13 2^12 2^11 2^10 2^9 2^8 2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 .",
             "url": "https://emaad-mir.github.io/emaad-fastpages/frontend/binary",
             "relUrl": "/frontend/binary",
             "date": " • Nov 18, 2022"
