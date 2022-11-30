@@ -213,22 +213,10 @@ window.onload = wrap_img;
      <span class="p">),</span>
 <span class="p">]</span>
 
-<span class="n">album_choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What album would you like to play? [1] Welcome to my Nightmare [2] Bad Company [3] Nightflight [4] More Mayhem </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
+<span class="n">album</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Which of the albums would you like to listen to? (ex. 1)&quot;</span><span class="p">))</span>
+<span class="n">song</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What song would you like to play from this album? (ex. 2)&quot;</span><span class="p">))</span>
 
-<span class="k">if</span> <span class="n">album_choice</span> <span class="o">==</span> <span class="n">albums</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-    <span class="n">song_choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What song from Welcome to My Nightmare would you like to play? [1] Welcome to my Nightmare [2] Devil&#39;s Food [3] The Black Widow [4] Some Folks [5] Only Women Bleed</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">song_choice</span> <span class="ow">in</span> <span class="nb">len</span><span class="p">(</span><span class="n">albums</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Playing &quot;</span><span class="p">,</span> <span class="n">song_choice</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Playing &quot;</span><span class="p">,</span><span class="n">song_choice</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">album_choice</span> <span class="o">==</span> <span class="n">albums</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
-    <span class="n">song_choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What song from Bad Company would you like to play? [1] Welcome to my Nightmare [2] Devil&#39;s Food [3] The Black Widow [4] Some Folks [5] Only Women Bleed</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
-    
-<span class="k">if</span> <span class="n">album_choice</span> <span class="o">==</span> <span class="n">albums</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span>
-    <span class="n">song_choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What song from Nightflight would you like to play? [1] Welcome to my Nightmare [2] Devil&#39;s Food [3] The Black Widow [4] Some Folks [5] Only Women Bleed</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
-    
-<span class="k">if</span> <span class="n">album_choice</span> <span class="o">==</span> <span class="n">albums</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span>
-    <span class="n">song_choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What song from More Mayhem would you like to play? [1] Welcome to my Nightmare [2] Devil&#39;s Food [3] The Black Widow [4] Some Folks [5] Only Women Bleed</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
-    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Playing </span><span class="se">\&quot;</span><span class="si">{0}</span><span class="se">\&quot;</span><span class="s2"> from album </span><span class="se">\&quot;</span><span class="si">{1}</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">albums</span><span class="p">[</span><span class="n">album</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="n">song</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span><span class="n">albums</span><span class="p">[</span><span class="n">album</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -241,7 +229,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Playing  2
+<pre>Playing &#34;I Turned to Stone&#34; from album &#34;Nightflight&#34;
 </pre>
 </div>
 </div>
