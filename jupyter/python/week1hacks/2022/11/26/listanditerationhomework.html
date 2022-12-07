@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -443,10 +443,21 @@ artichokes
     <span class="s2">&quot;01001001&quot;</span><span class="p">,</span> <span class="s2">&quot;10101010&quot;</span><span class="p">,</span> <span class="s2">&quot;10010110&quot;</span><span class="p">,</span> <span class="s2">&quot;00110111&quot;</span><span class="p">,</span> <span class="s2">&quot;11101100&quot;</span><span class="p">,</span> <span class="s2">&quot;11010001&quot;</span><span class="p">,</span> <span class="s2">&quot;10000001&quot;</span>
 <span class="p">]</span>
 
-<span class="k">def</span> <span class="nf">binary_convert</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
-    <span class="k">for</span> <span class="nb">bin</span> <span class="ow">in</span> <span class="n">binarylist</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">binarylist</span><span class="p">[</span><span class="nb">bin</span><span class="p">]))</span>
-        <span class="k">pass</span>
+<span class="k">def</span> <span class="nf">decimal_to_binary_converter</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">binary</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">binvalue</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">binarylist</span><span class="p">)):</span>
+    <span class="n">binarylist</span><span class="p">[</span><span class="n">binvalue</span><span class="p">]</span> <span class="o">=</span> <span class="n">decimal_to_binary_converter</span><span class="p">(</span><span class="n">binarylist</span><span class="p">[</span><span class="n">binvalue</span><span class="p">])</span>
+
+<span class="n">list_final</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">binvalue</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">binarylist</span><span class="p">)):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">binarylist</span><span class="p">[</span><span class="n">binvalue</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">):</span>
+        <span class="n">list_final</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">binarylist</span><span class="p">[</span><span class="n">binvalue</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_final</span><span class="p">)</span>
+
+
+
     <span class="c1">#use this function to convert every binary value in binarylist to decimal</span>
     <span class="c1">#afterward, get rid of the values that are greater than 100 in decimal</span>
 
@@ -454,6 +465,20 @@ artichokes
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[73, 55]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -467,6 +492,15 @@ artichokes
 <li>I tried to use a for loop and use the "int" type in order to convert every binary value in the list to a decimal value, but when I ran the code, nothing showed up in the output (no error messages)</li>
 <li>I tried using for "bin" in binarylist, but I still was not getting anything in the output</li>
 <li>I hope that eventually, all of the concepts that we learned in this lesson will become clear to me and that I will be able to go back to this code and improve myself</li>
+</ul>
+<h1 id="Updates-as-of-12/6/22">Updates as of 12/6/22<a class="anchor-link" href="#Updates-as-of-12/6/22"> </a></h1><ul>
+<li>I finally figured out how to write out the code for the binary to decimal program</li>
+<li>Things that I realized:<ul>
+<li>In order to convert the binary to decimal, I had to make sure that I used "return" along with the int type in order to get the binary value as its decimal</li>
+<li>I had to make a for loop that converted every element that was in the list into binary, which relates back to using "return" in order to get its decimal value</li>
+<li>Once I figured out how to do that, I could use an if statement such that the program only printed out binary values who decimals came out to be less than 100, which in this case was 73 and 55</li>
+</ul>
+</li>
 </ul>
 
 </div>
