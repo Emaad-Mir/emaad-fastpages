@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -207,6 +207,20 @@ To solve the same problem, many different algorithms can be used.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -262,6 +276,20 @@ False because the remainder of 30 and 4 is not equal to 0. 30/4 = 7.5, which mea
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>it is too hot outside
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -269,8 +297,7 @@ False because the remainder of 30 and 4 is not equal to 0. 30/4 = 7.5, which mea
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>What is the output of this algorithm? it looks similar but the output is different!
-There will be two things: "It is too hot outside" and "I will go outside"
-Note: I modified the code segment so that the user could type any temperature in degrees Fahrenheit.</p>
+There will be two things: "It is too hot outside" and "I will go outside"</p>
 
 </div>
 </div>
@@ -292,6 +319,21 @@ Note: I modified the code segment so that the user could type any temperature in
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>it is too hot outside
+i will go outside
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -327,6 +369,20 @@ This code segment allows the user to input any temperature, and depending on wha
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>72 degrees outside. I will go outside!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -383,6 +439,20 @@ The resulting sum is 15.</li>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -411,6 +481,20 @@ The resulting sum is 15.</li>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>25
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -482,6 +566,30 @@ The resulting sum is 15.</li>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Starting Value:  13
+40
+20
+10
+5
+16
+8
+4
+2
+1
+That's all folks!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -629,11 +737,49 @@ Check number 13 passed
 <h1 id="3.9-Developing-Algorithms-(JavaScript)">
 <a class="anchor" href="#3.9-Developing-Algorithms-(JavaScript)" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.9 Developing Algorithms (JavaScript)<a class="anchor-link" href="#3.9-Developing-Algorithms-(JavaScript)"> </a>
 </h1>
-<p>As much as I would have liked to try the challenge of making an algorithm that takes in an IP address and a subnet mask and computes the network address, my JavaScript kernel has continued to not be working properly. I have tried several solutions that I found online to fix the problem, but no matter what I have tried, it still does not work.</p>
+<p>As much as I would have liked to try the challenge of making an algorithm that takes in an IP address and a subnet mask and computes the network address, my JavaScript kernel has continued to not be working properly. I have tried several solutions that I found online to fix the problem, but no matter what I have tried, it still does not work. Although my kernel does not work, here is how I would have tried to go about doing this challenge (note: no output is shown since the kernel doesn't work)</p>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">//</span> <span class="n">Example</span>
+<span class="n">var</span> <span class="n">ipAddress</span> <span class="o">=</span> <span class="s2">"192.168.0.1"</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">subnetMask</span> <span class="o">=</span> <span class="s2">"255.255.255.0"</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="n">networkAddress</span> <span class="o">=</span> <span class="n">computeNetworkAddress</span><span class="p">(</span><span class="n">ipAddress</span><span class="p">,</span> <span class="n">subnetMask</span><span class="p">);</span>
+
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">networkAddress</span><span class="p">);</span> <span class="o">//</span> <span class="n">Output</span><span class="p">:</span> <span class="s2">"192.168.0.0"</span>
+
+<span class="o">//</span> <span class="n">computeNetworkAddress</span><span class="p">()</span> <span class="n">function</span>
+<span class="n">function</span> <span class="n">computeNetworkAddress</span><span class="p">(</span><span class="n">ipAddress</span><span class="p">,</span> <span class="n">subnetMask</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="n">Split</span> <span class="n">the</span> <span class="n">IP</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">subnet</span> <span class="n">mask</span> <span class="n">into</span> <span class="n">octets</span>
+  <span class="n">var</span> <span class="n">ipAddressOctets</span> <span class="o">=</span> <span class="n">ipAddress</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+  <span class="n">var</span> <span class="n">subnetMaskOctets</span> <span class="o">=</span> <span class="n">subnetMask</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+
+  <span class="o">//</span> <span class="n">Perform</span> <span class="n">a</span> <span class="n">bitwise</span> <span class="n">AND</span> <span class="n">operation</span> <span class="n">on</span> <span class="n">each</span> <span class="n">octet</span> <span class="n">of</span> <span class="n">the</span> <span class="n">IP</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">subnet</span> <span class="n">mask</span>
+  <span class="n">var</span> <span class="n">networkAddressOctets</span> <span class="o">=</span> <span class="n">ipAddressOctets</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">ipAddressOctet</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">ipAddressOctet</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">subnetMaskOctets</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="mi">10</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="o">//</span> <span class="n">Concatenate</span> <span class="n">the</span> <span class="n">octets</span> <span class="n">into</span> <span class="n">a</span> <span class="n">single</span> <span class="n">decimal</span> <span class="n">string</span>
+  <span class="k">return</span> <span class="n">networkAddressOctets</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
