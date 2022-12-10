@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -738,6 +738,7 @@ Check number 13 passed
 <a class="anchor" href="#3.9-Developing-Algorithms-(JavaScript)" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.9 Developing Algorithms (JavaScript)<a class="anchor-link" href="#3.9-Developing-Algorithms-(JavaScript)"> </a>
 </h1>
 <p>As much as I would have liked to try the challenge of making an algorithm that takes in an IP address and a subnet mask and computes the network address, my JavaScript kernel has continued to not be working properly. I have tried several solutions that I found online to fix the problem, but no matter what I have tried, it still does not work. Although my kernel does not work, here is how I would have tried to go about doing this challenge (note: no output is shown since the kernel doesn't work)</p>
+<p>Update: My JavaScript Kernel has just started working, but even when I run the code, I still get that there is a syntax error in how I declared the function "computeNetworkAddress". I have tried looking up solutions to this problem online and have tried them, but I still get the same error no matter what.</p>
 
 </div>
 </div>
@@ -749,31 +750,74 @@ Check number 13 passed
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">//</span> <span class="n">Example</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">computeNetworkAddress</span><span class="p">(</span><span class="n">ipAddress</span><span class="p">,</span> <span class="n">subnetMask</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="n">Convert</span> <span class="n">the</span> <span class="n">IP</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">subnet</span> <span class="n">mask</span> <span class="n">to</span> <span class="n">binary</span>
+  <span class="n">var</span> <span class="n">binaryIpAddress</span> <span class="o">=</span> <span class="n">convertToBinary</span><span class="p">(</span><span class="n">ipAddress</span><span class="p">);</span>
+  <span class="n">var</span> <span class="n">binarySubnetMask</span> <span class="o">=</span> <span class="n">convertToBinary</span><span class="p">(</span><span class="n">subnetMask</span><span class="p">);</span>
+
+  <span class="o">//</span> <span class="n">Perform</span> <span class="n">a</span> <span class="n">bitwise</span> <span class="n">AND</span> <span class="n">operation</span> <span class="n">on</span> <span class="n">the</span> <span class="n">binary</span> <span class="n">IP</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">subnet</span> <span class="n">mask</span>
+  <span class="n">var</span> <span class="n">networkAddressBinary</span> <span class="o">=</span> <span class="n">binaryIpAddress</span> <span class="o">&amp;</span> <span class="n">binarySubnetMask</span><span class="p">;</span>
+
+  <span class="o">//</span> <span class="n">Convert</span> <span class="n">the</span> <span class="n">result</span> <span class="n">back</span> <span class="n">to</span> <span class="n">decimal</span>
+  <span class="n">var</span> <span class="n">networkAddress</span> <span class="o">=</span> <span class="n">convertToDecimal</span><span class="p">(</span><span class="n">networkAddressBinary</span><span class="p">);</span>
+
+  <span class="o">//</span> <span class="n">Return</span> <span class="n">the</span> <span class="n">network</span> <span class="n">address</span>
+  <span class="k">return</span> <span class="n">networkAddress</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">convertToBinary</span><span class="p">(</span><span class="n">address</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="n">Split</span> <span class="n">the</span> <span class="n">address</span> <span class="n">into</span> <span class="n">its</span> <span class="n">octets</span>
+  <span class="n">var</span> <span class="n">octets</span> <span class="o">=</span> <span class="n">address</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+
+  <span class="o">//</span> <span class="n">Convert</span> <span class="n">each</span> <span class="n">octet</span> <span class="n">to</span> <span class="n">binary</span>
+  <span class="n">var</span> <span class="n">binaryOctets</span> <span class="o">=</span> <span class="n">octets</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">octet</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">octet</span><span class="p">)</span><span class="o">.</span><span class="n">toString</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="o">//</span> <span class="n">Concatenate</span> <span class="n">the</span> <span class="n">binary</span> <span class="n">octets</span> <span class="n">into</span> <span class="n">a</span> <span class="n">single</span> <span class="n">binary</span> <span class="n">string</span>
+  <span class="k">return</span> <span class="n">binaryOctets</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">convertToDecimal</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="n">Split</span> <span class="n">the</span> <span class="n">binary</span> <span class="n">string</span> <span class="n">into</span> <span class="n">octets</span>
+  <span class="n">var</span> <span class="n">binaryOctets</span> <span class="o">=</span> <span class="n">binary</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="o">/.</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span><span class="o">/</span><span class="n">g</span><span class="p">);</span>
+
+  <span class="o">//</span> <span class="n">Convert</span> <span class="n">each</span> <span class="n">binary</span> <span class="n">octet</span> <span class="n">to</span> <span class="n">decimal</span>
+  <span class="n">var</span> <span class="n">octets</span> <span class="o">=</span> <span class="n">binaryOctets</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">binaryOctet</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">binaryOctet</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="o">//</span> <span class="n">Concatenate</span> <span class="n">the</span> <span class="n">octets</span> <span class="n">into</span> <span class="n">a</span> <span class="n">single</span> <span class="n">decimal</span> <span class="n">string</span>
+  <span class="k">return</span> <span class="n">octets</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+<span class="p">}</span>
+
 <span class="n">var</span> <span class="n">ipAddress</span> <span class="o">=</span> <span class="s2">"192.168.0.1"</span><span class="p">;</span>
 <span class="n">var</span> <span class="n">subnetMask</span> <span class="o">=</span> <span class="s2">"255.255.255.0"</span><span class="p">;</span>
 
 <span class="n">var</span> <span class="n">networkAddress</span> <span class="o">=</span> <span class="n">computeNetworkAddress</span><span class="p">(</span><span class="n">ipAddress</span><span class="p">,</span> <span class="n">subnetMask</span><span class="p">);</span>
 
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">networkAddress</span><span class="p">);</span> <span class="o">//</span> <span class="n">Output</span><span class="p">:</span> <span class="s2">"192.168.0.0"</span>
-
-<span class="o">//</span> <span class="n">computeNetworkAddress</span><span class="p">()</span> <span class="n">function</span>
-<span class="n">function</span> <span class="n">computeNetworkAddress</span><span class="p">(</span><span class="n">ipAddress</span><span class="p">,</span> <span class="n">subnetMask</span><span class="p">)</span> <span class="p">{</span>
-  <span class="o">//</span> <span class="n">Split</span> <span class="n">the</span> <span class="n">IP</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">subnet</span> <span class="n">mask</span> <span class="n">into</span> <span class="n">octets</span>
-  <span class="n">var</span> <span class="n">ipAddressOctets</span> <span class="o">=</span> <span class="n">ipAddress</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
-  <span class="n">var</span> <span class="n">subnetMaskOctets</span> <span class="o">=</span> <span class="n">subnetMask</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
-
-  <span class="o">//</span> <span class="n">Perform</span> <span class="n">a</span> <span class="n">bitwise</span> <span class="n">AND</span> <span class="n">operation</span> <span class="n">on</span> <span class="n">each</span> <span class="n">octet</span> <span class="n">of</span> <span class="n">the</span> <span class="n">IP</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">subnet</span> <span class="n">mask</span>
-  <span class="n">var</span> <span class="n">networkAddressOctets</span> <span class="o">=</span> <span class="n">ipAddressOctets</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">ipAddressOctet</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">ipAddressOctet</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">subnetMaskOctets</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="mi">10</span><span class="p">);</span>
-  <span class="p">});</span>
-
-  <span class="o">//</span> <span class="n">Concatenate</span> <span class="n">the</span> <span class="n">octets</span> <span class="n">into</span> <span class="n">a</span> <span class="n">single</span> <span class="n">decimal</span> <span class="n">string</span>
-  <span class="k">return</span> <span class="n">networkAddressOctets</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
-<span class="p">}</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[40], line 1</span>
+<span class="ansi-red-fg">    function computeNetworkAddress(ipAddress, subnetMask) {</span>
+             ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
