@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: This blog includes notes that I took from the lessons for sections 5-11.
+description: This blog includes notes that I took from the lessons for sections 5-7.
 categories: [extra]
-title: Unit 3 Sections 5-11 Notes
+title: Unit 3 Sections 5-7 Notes
 image: /images/college-board-logo.png
 comments: true
 ---
@@ -51,18 +51,3 @@ comments: true
 - Nested Conditional Statements consist of conditional statements within conditional statements
 - Essentially, one can think of nested conditional statements as an if statement within an if statement. 
 - If Else statements can be put inside of another if else statement
-
-
-# Unit 3.8 
-
-
-
-# Unit 3.9
-
-
-
-# Unit 3.10
-
-
-
-# Unit 3.11
