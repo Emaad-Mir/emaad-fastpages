@@ -10,7 +10,7 @@ comments: true
 
 # Submission 1
 
-|Reporting Category|Student Score|College Board Score|Comments|
+|Reporting Category|My Scoring|College Board Scoring|Comments|
 |Program Purpose and Function|1|0|The student met/did not meet the requirement because...|
 |Data Abstraction|1|1|The student met the requirement because...|
 |Managing Complexity|0|0|The student met the requirement because...|
@@ -21,7 +21,7 @@ comments: true
 
 # Submission 2
 
-|Reporting Category|Student Score|College Board Score|Comments|
+|Reporting Category|My Scoring|College Board Scoring|Comments|
 |Program Purpose and Function|1|1|The student met/did not meet the requirement because...|
 |Data Abstraction|1|1|The student met the requirement because...|
 |Managing Complexity|0|1|The student met the requirement because...|
