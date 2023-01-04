@@ -10,6 +10,7 @@ comments: true
 
 # Submission 1
 
+|Reporting Category|Student Score|College Board Score|Comments|
 |Program Purpose and Function|1|0|The student met/did not meet the requirement because...|
 |Data Abstraction|1|1|The student met the requirement because...|
 |Managing Complexity|0|0|The student met the requirement because...|
