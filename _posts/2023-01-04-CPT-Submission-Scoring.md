@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: This blog contains how I scored two submissions of the CPT on Collegeboard and compares my scoring to how Collegeboard scored it.
 categories: [extra]
-title: CPT Submission Scoring
+title: CPT Submission Scoring Set 1
 image: /images/college-board-logo.png
 comments: true
 ---
