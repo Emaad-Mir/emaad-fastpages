@@ -18,7 +18,7 @@ Object Oriented Programming (OOP) is a really useful way of allowing us to give 
 
 This is the code segment that can be found at the very top of my finished hacks, shown below:
 
-![image.png](attachment:image.png)
+![]({{site.baseurl}}/images/class.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
 Although there is not a whole lot to look at from just this segment, there a few things worth noticing. For instance, if you look at all of the "self." lines, you will see how the periods are followed by an underscore. The underscore is there in order to make the variables used (arguments inside def_init_) protected to that one class. By doing this, if a user wishes to make more classes, they can continue to reuse the same variable with different elements as long as that variable is protected to each of those classes. If the underscore was not there, this would cause the definition of the variable to change, making the code very messy and unnecessarily complex.
 
@@ -32,14 +32,14 @@ Getter - The definition is pretty much said in the name, but getters are what ge
 
 Some of the code specifically involves the use of setters and getters, as shown below as an example:
 
-![image.png](attachment:image.png)
+![]({{site.baseurl}}/images/setterandgetter.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
 
 # Output
 
 If you took a close look at what was in the output, you may have noticed that an asterisk would appear next to a user's name, as shown below:
 
-![image.png](attachment:image.png)
+![]({{site.baseurl}}/images/asterisks.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
 The asterisk is there to tell you that the computer has printed out the value of certain attributes for Chinmay. If I decided to pass u1 and u1's password as the parameters after users, then an asterisk would appear next to Emaad. 
 
