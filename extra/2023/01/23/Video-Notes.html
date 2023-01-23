@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      3 min read
     
 </span></p>
 
@@ -167,7 +167,7 @@ window.onload = wrap_img;
 <h2 id="challenge-3-many-rows-would-be-added-to-the-table-unintentionally">
 <a class="anchor" href="#challenge-3-many-rows-would-be-added-to-the-table-unintentionally" aria-hidden="true"><span class="octicon octicon-link"></span></a>Challenge 3: Many Rows Would Be Added to the Table Unintentionally</h2>
 
-<p>When I began to work on adding data to the table and list on the web application, I noticed something very strange. First off, the class I created was a Games class, with three attributes: name, description, and date made. Previously, I had two entries in the table, with both being Hangman. Sometimes, however, if I tried to add something else that was not hangman (POST) and made a GET request proceeding the POST request, not only did it add the new entry, but it also added multiple Hangman entries at the same time, making most of the table filled with the exact same information about Hangman (10 times). Somehow, it all stopped, and I am still not sure what I did to fix it, but I was fortunate enough that my video did not have this same problem occur. I was able to get it so that only the new entry would be added and nothing else, especially not Hangman :).</p>
+<p>When I began to work on adding data to the table and list on the web application, I noticed something very strange. First off, the class I created was a Games class, with three attributes: name, description, and date made. Previously, I had two entries in the table, with both being Hangman. Sometimes, however, if I tried to add something else that was not hangman (POST) and made a GET request proceeding the POST request, not only did it add the new entry, but it also added multiple Hangman entries at the same time, making most of the table filled with the exact same information about Hangman (10 times). Thankfully, once I realized how to make a delete request (which also took some time!), I was able to remove all extra entries and make it so that only the entry I made a POST request for would show up after the GET request.</p>
 
 <h1 id="reflection">
 <a class="anchor" href="#reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection</h1>
