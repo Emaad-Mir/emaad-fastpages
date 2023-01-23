@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -111,6 +111,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#challenge-1-having-to-get-the-new-version-of-flask">Challenge 1: Having to Get the New Version of Flask</a></li>
 <li class="toc-entry toc-h2"><a href="#challenge-2-link-to-application-would-show-error">Challenge 2: Link to Application Would Show Error</a></li>
 <li class="toc-entry toc-h2"><a href="#challenge-3-many-rows-would-be-added-to-the-table-unintentionally">Challenge 3: Many Rows Would Be Added to the Table Unintentionally</a></li>
+<li class="toc-entry toc-h2"><a href="#challenge-4-debugging-mode">Challenge 4: Debugging Mode</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#reflection">Reflection</a></li>
@@ -168,6 +169,11 @@ window.onload = wrap_img;
 <a class="anchor" href="#challenge-3-many-rows-would-be-added-to-the-table-unintentionally" aria-hidden="true"><span class="octicon octicon-link"></span></a>Challenge 3: Many Rows Would Be Added to the Table Unintentionally</h2>
 
 <p>When I began to work on adding data to the table and list on the web application, I noticed something very strange. First off, the class I created was a Games class, with three attributes: name, description, and date made. Previously, I had two entries in the table, with both being Hangman. Sometimes, however, if I tried to add something else that was not hangman (POST) and made a GET request proceeding the POST request, not only did it add the new entry, but it also added multiple Hangman entries at the same time, making most of the table filled with the exact same information about Hangman (10 times). Thankfully, once I realized how to make a delete request (which also took some time!), I was able to remove all extra entries and make it so that only the entry I made a POST request for would show up after the GET request.</p>
+
+<h2 id="challenge-4-debugging-mode">
+<a class="anchor" href="#challenge-4-debugging-mode" aria-hidden="true"><span class="octicon octicon-link"></span></a>Challenge 4: Debugging Mode</h2>
+
+<p>One of the things we had to do for the database video was that we had to show a debugging session. However, whenever I tried clicking the “Run &amp; Debug” button in the main.py file, I would always get that there was a syntax error of some sort within the main.py file. I tried looking up the error on several forums such as stack overflow and GitHub issues. I ended up adding rows to the table in an alternative way, which was adding entries using the games.py file, which worked as expected. Next time, I will make sure to ask questions about the debugging mode so that I can do everything as asked and assigned by the teacher.</p>
 
 <h1 id="reflection">
 <a class="anchor" href="#reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection</h1>
