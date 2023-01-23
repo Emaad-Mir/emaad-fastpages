@@ -51,6 +51,11 @@ I began to notice, however, that each time I open VSCode (before it was previous
 When I began to work on adding data to the table and list on the web application, I noticed something very strange. First off, the class I created was a Games class, with three attributes: name, description, and date made. Previously, I had two entries in the table, with both being Hangman. Sometimes, however, if I tried to add something else that was not hangman (POST) and made a GET request proceeding the POST request, not only did it add the new entry, but it also added multiple Hangman entries at the same time, making most of the table filled with the exact same information about Hangman (10 times). Thankfully, once I realized how to make a delete request (which also took some time!), I was able to remove all extra entries and make it so that only the entry I made a POST request for would show up after the GET request.
 
 
+## Challenge 4: Debugging Mode
+
+One of the things we had to do for the database video was that we had to show a debugging session. However, whenever I tried clicking the "Run & Debug" button in the main.py file, I would always get that there was a syntax error of some sort within the main.py file. I tried looking up the error on several forums such as stack overflow and GitHub issues. I ended up adding rows to the table in an alternative way, which was adding entries using the games.py file, which worked as expected. Next time, I will make sure to ask questions about the debugging mode so that I can do everything as asked and assigned by the teacher.
+
+
 # Reflection
 
 As shown by the three challenges above, I did not have an easy time completing this. However, I think that these challenges really helped me learn a lot, and I hope that the two videos I made will serve as a helpful study/recap tool for both myself and other students taking this class. Even though the process was quite rough, I still enjoyed the feeling I got when I was able to get everything working the way it was supposed to. Also, if I ever play Hangman, I will always be reminded of doing this project!
