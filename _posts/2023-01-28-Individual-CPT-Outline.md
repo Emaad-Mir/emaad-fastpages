@@ -15,7 +15,7 @@ The name of our project is called "Theee Arcade", and it is intended to serve as
 
 ## Team Member Roles
 
-We have assigned each member of our team a part of the project for them to complete so that everybody's CPT submission will be different but still be based on the same idea. Below is a table that shows the team members, their roles, and their part of the project that they are to complete:
+We have assigned each member of our team a page of the project for them to complete so that everybody's CPT submission will be different but still be based on the same idea. Below is a table that shows the team members, their roles, and their part of the project that they are to complete:
 
 |Team Member|Scrum Team Role|Assigned Part of the Project|Purpose|
 |-----------|-----------|-----------|-----------|
@@ -41,9 +41,9 @@ In this VERY rough model, you can see that at the very top, there is a link to e
 
 ## Sample Code
 
-Below is a link to a code segment in Python (video uses Python compiler) that basically shows how I want the hangman game to function (only limited to terminal for now). While this may not be a submission that could earn full credit for the Create Performance, it definitely meets some of the main College Board criteria. Comments are added to explain not only what the line does but to also show how it could meet the criteria:
+Below is an image of a code segment in Python that basically shows how I want the hangman game to function (only limited to terminal for now). While this may not be a submission that could earn full credit for the Create Performance Task, it definitely meets some of the main College Board criteria. Comments are added to explain not only what the line does but to also show how it could meet the criteria:
 
-<a href="{https://drive.google.com/file/d/1jP6FGF3enkLtQ97uR5Sq3sQTRPaqhXGB/view?usp=sharing}" title="Sample Code Segment (Python Compiler)">
+![]({{site.baseurl}}/images/cptcodesegment.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
 
 ## Sample Code: Explanation
