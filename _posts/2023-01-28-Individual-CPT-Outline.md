@@ -15,7 +15,7 @@ The name of our project is called "Theee Arcade", and it is intended to serve as
 
 ## Team Member Roles
 
-We have assigned each member of our team a page of the project for them to complete so that everybody's CPT submission will be different but still be based on the same idea. Below is a table that shows the team members, their roles, and their part of the project that they are to complete:
+We have assigned each member of our team a part of the project for them to complete so that everybody's CPT submission will be different but still be based on the same idea. Below is a table that shows the team members, their roles, and their part of the project that they are to complete:
 
 |Team Member|Scrum Team Role|Assigned Part of the Project|Purpose|
 |-----------|-----------|-----------|-----------|
