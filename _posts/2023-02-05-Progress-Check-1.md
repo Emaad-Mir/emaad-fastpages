@@ -71,7 +71,7 @@ This week is looking to be a very busy week, as we have multiple work days accor
 
 - Style the flask/JavaScript table (will decide which one I want to use): As mentioned earlier, I created two of the same table, with one made in Flask and one made in JavaScript. While this will likely be done last, I do believe that it is important that I consider the overall "cosmetics" of our project to demonstrate that some effort was put in to making the website look nice and not just into the code. Below is an example that I could take inspiration from in styling my able in CSS/HTML/JavaScript:
 
-![]({{site.baseurl}}/images/leuck.png "https://github.com/Emaad-Mir/emaad-fastpages")
+![]({{site.baseurl}}/images/style.png "https://github.com/Emaad-Mir/emaad-fastpages")
 
 
 # Overall Reflection
