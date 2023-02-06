@@ -42,11 +42,19 @@ The table made above serves almost as a menu of games for the user to choose fro
 
 ## What I am Concerned About
 
-While I have a pretty solid idea on how I want to implement this table into our project, I am concerned about how I will make the table look nice when it is presented to the user. Even though design should be the least of my worries at this point, I still would like to make those who test this application excited when they first look at the page with this table. This way, they will be more drawn into the games and will look forward to seeing how everything works out.
+While I have a pretty solid idea on how I want to implement this table into our project, I am concerned about how I will make the table look nice when it is presented to the user. Even though design should be the least of my worries at this point, I still would like to make those who test this application excited when they first look at the page with this table. This way, they will be more drawn into the games and will look forward to seeing how everything works out. In addition to the "cosmetics" of table, I am also worried about figuring out how to add the borders to the table so that it looks like an actual table, but this should hopefully be an easy fix. 
 
 # Tangible 2: JavaScript Code
 
-## What I am Concerned About
+Last week, I showed some sample code that I wrote in Python that I plan to use for my CPT project. This week, I have the same code performing the same functions but in JavaScript, and this is the language that I plan to use in creating the actual page for my part of the project. If you would like to see the video of the code segment running, you can click on the image of hangman below, where you will see a few test runs of the project. 
+
+[![Hello]({https://play-lh.googleusercontent.com/Eg8Swxv4VMMs-l8r0yzCDVX-Mr6RZiztBFieLfdjH9c5Apn4BoOJT4sMC5Vx5gNnfg})]({https://drive.google.com/file/d/1lxaW3cCAld2-wcPo07lnv2GLGWBtOooW/view?usp=sharing} "Link Title")
+
+
+## Explanation of the Video + What I am Concerned About
+
+# Plans for Next Week Onwards!
+
 
 
 # Overall Reflection
