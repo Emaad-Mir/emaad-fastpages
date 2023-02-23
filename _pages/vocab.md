@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 permalink: /vocab/
 title: Vocab
 categories: [studytools]
