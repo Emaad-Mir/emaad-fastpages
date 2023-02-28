@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -98,6 +98,10 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#link-to-full-code">Link to Full Code</a></li>
+<li class="toc-entry toc-h1"><a href="#video-response">Video Response</a></li>
+<li class="toc-entry toc-h1"><a href="#written-response">Written Response</a>
+<ul>
 <li class="toc-entry toc-h2"><a href="#3a">3a.</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#3ai">3.a.i.</a></li>
@@ -144,22 +148,35 @@ window.onload = wrap_img;
 </li>
 </ul>
 </li>
-</ul><h2 id="3a">
+</ul>
+</li>
+</ul><h1 id="link-to-full-code">
+<a class="anchor" href="#link-to-full-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Link to Full Code</h1>
+<p>If you would like to see all of the code that I wrote to create this program, you can click <a href="https://github.com/Emaad-Mir/GamesArcade/blob/gh-pages/_includes/hangman.html">this link</a>.</p>
+
+<h1 id="video-response">
+<a class="anchor" href="#video-response" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video Response</h1>
+<p>Link to <a href="https://youtu.be/3i7DEMg-Pv4">my video submission (YouTube)</a></p>
+
+<h1 id="written-response">
+<a class="anchor" href="#written-response" aria-hidden="true"><span class="octicon octicon-link"></span></a>Written Response</h1>
+
+<h2 id="3a">
 <a class="anchor" href="#3a" aria-hidden="true"><span class="octicon octicon-link"></span></a>3a.</h2>
 
 <h3 id="3ai">
 <a class="anchor" href="#3ai" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.i.</h3>
-<p>The purpose of the program is to relieve the user’s boredom and entertain them by allowing them to add and guess words.</p>
+<p>The purpose of the program is to relieve the user’s boredom and entertain them by challenging them to guess a random word.</p>
 
 <h3 id="3aii">
 <a class="anchor" href="#3aii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.ii.</h3>
 
-<p>In the video, the user plays one round of hangman and is able to guess the correct word in [] guesses. The video also shows the user adding a word to the list of existing words and deleting an existing word based on its id number in the list. This is verified in the JavaScript console of the inspect element.</p>
+<p>In the video, the user plays two rounds of hangman: one in which they guess the word and win and one in which they fail to guess the word in the seven lives they were given. In the first round, the user was able to guess the correct word (HOUSE) with 5 lives remaining. The user inputted letters into the text box, and the more letters they guessed correctly, the more blanks that were filled. The user eventually guesses all of the letters correctly and is presented with the “You Win!” message. In the second round, the user was unable to guess the correct word (CONVERSATION) and lost all of their lives. The more letters the user guessed incorrectly, the more letters that were added to the list of incorrect guesses. Once the user loses all of their lives, the game ends and they are prompted with the “You Lose” message.</p>
 
 <h3 id="3aiii">
 <a class="anchor" href="#3aiii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.iii.</h3>
 
-<p>The input from the video is demonstrated in two ways. One of them is the user inputting a letter in order to guess the randomly chosen word. The other way is them adding a word to the list and them removing a word from the list based on its id. Similarly, the output is demonstrated in several ways. This is shown by the program either adding the letter that the user guessed to the blanks or adding an incorrect letter guessed by the user to the list of incorrect letters. Additionally, the output is the word being added to or deleted from the list of words.</p>
+<p>The input from the video is the user inputting letters in order to guess the randomly chosen word. The output is demonstrated by the program’s response to the user’s guessed letters, which is either adding the letter that the user guessed to the blanks or adding an incorrect letter guessed by the user to the list of incorrect letters.</p>
 
 <h2 id="3b">
 <a class="anchor" href="#3b" aria-hidden="true"><span class="octicon octicon-link"></span></a>3b.</h2>
@@ -223,12 +240,12 @@ window.onload = wrap_img;
 <h4 id="call-one">
 <a class="anchor" href="#call-one" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call One</h4>
 
-<p>The first call results from the word “” being guessed correctly in seven lives or less.</p>
+<p>The first call results from the word “Aesthetics” being guessed correctly in seven lives or less.</p>
 
 <h4 id="call-two">
 <a class="anchor" href="#call-two" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call Two</h4>
 
-<p>The second call results from the word “” not being guessed in the seven lives given.</p>
+<p>The second call results from the word “Intelligent” not being guessed in the seven lives given.</p>
 
 <h3 id="3dii">
 <a class="anchor" href="#3dii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.ii.</h3>
