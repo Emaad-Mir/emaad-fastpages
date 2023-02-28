@@ -8,21 +8,28 @@ image: /images/college-board-logo.png
 comments: true
 --- 
 
+# Link to Full Code
+If you would like to see all of the code that I wrote to create this program, you can click [this link](https://github.com/Emaad-Mir/GamesArcade/blob/gh-pages/_includes/hangman.html).
+
+# Video Response
+Link to [my video submission (YouTube)](https://youtu.be/3i7DEMg-Pv4)
+
+# Written Response
 
 ## 3a.
 
 ### 3.a.i.
-The purpose of the program is to relieve the user's boredom and entertain them by allowing them to add and guess words. 
+The purpose of the program is to relieve the user's boredom and entertain them by challenging them to guess a random word.
 
 
 ### 3.a.ii.
 
-In the video, the user plays one round of hangman and is able to guess the correct word in [] guesses. The video also shows the user adding a word to the list of existing words and deleting an existing word based on its id number in the list. This is verified in the JavaScript console of the inspect element. 
+In the video, the user plays two rounds of hangman: one in which they guess the word and win and one in which they fail to guess the word in the seven lives they were given. In the first round, the user was able to guess the correct word (HOUSE) with 5 lives remaining. The user inputted letters into the text box, and the more letters they guessed correctly, the more blanks that were filled. The user eventually guesses all of the letters correctly and is presented with the "You Win!" message. In the second round, the user was unable to guess the correct word (CONVERSATION) and lost all of their lives. The more letters the user guessed incorrectly, the more letters that were added to the list of incorrect guesses. Once the user loses all of their lives, the game ends and they are prompted with the "You Lose" message.
 
 
 ### 3.a.iii.
 
-The input from the video is demonstrated in two ways. One of them is the user inputting a letter in order to guess the randomly chosen word. The other way is them adding a word to the list and them removing a word from the list based on its id. Similarly, the output is demonstrated in several ways. This is shown by the program either adding the letter that the user guessed to the blanks or adding an incorrect letter guessed by the user to the list of incorrect letters. Additionally, the output is the word being added to or deleted from the list of words. 
+The input from the video is the user inputting letters in order to guess the randomly chosen word. The output is demonstrated by the program's response to the user's guessed letters, which is either adding the letter that the user guessed to the blanks or adding an incorrect letter guessed by the user to the list of incorrect letters. 
 
 ## 3b.
 
@@ -81,12 +88,12 @@ The identified algorithm first checks whether the game is finished (as shown by 
 
 #### Call One
 
-The first call results from the word "" being guessed correctly in seven lives or less. 
+The first call results from the word "Aesthetics" being guessed correctly in seven lives or less. 
 
 
 #### Call Two
 
-The second call results from the word "" not being guessed in the seven lives given. 
+The second call results from the word "Intelligent" not being guessed in the seven lives given. 
 
 
 ### 3.d.ii.
