@@ -81,25 +81,51 @@ The identified algorithm first checks whether the game is finished (as shown by 
 
 #### Call One
 
+The first call results from the word "" being guessed correctly in seven lives or less. 
+
 
 #### Call Two
 
+The second call results from the word "" not being guessed in the seven lives given. 
 
 
 ### 3.d.ii.
 
 #### Condition(s) tested by Call One
 
+![]({{site.baseurl}}/images/firstcall.png)
+
+The user guessing the word correctly causes the above code segment to be executed, which sets the boolean variable "won" to true and the solution variable equal to the user's progress. 
 
 
 #### Condition(s) tested by Call Two
 
+![]({{site.baseurl}}/images/secondcall.png)
+
+The user failing to guess the word causes the above code segment to be executed, which sets the boolean variable "won" equal to false and presents the user with the "You Lost" message.
 
 
 ### 3.d.iii.
 
 #### Results of Call One
 
+A E S T H E T I C S
+
+Lives: 5
+
+[R, O]
+
+YOU WIN! The correct answer was AESTHETICS.
+
 
 #### Results of Call Two
+
+_ N T E _ _ _ _ E N T
+
+Lives: 0
+
+[A, O, S, C, P, R, K]
+
+GAME OVER The correct answer was INTELLIGENT.
+
 
