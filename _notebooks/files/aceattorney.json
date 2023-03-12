@@ -1,0 +1,36 @@
+{ "name": {
+        "0":"Original Trilogy",
+        "1":"Ace Attorney 1",
+        "2":"Apollo Justice",
+        "3":"Ace Attorney 2",
+        "4":"Ace Attorney 3",
+        "5":"Chronicles",
+        "6":"Dual Destinies",
+        "7":"Investigation",
+        "8":"Spirit of Justice",
+        "9":"Investigations 2",
+        "10":"DGS1",
+        "11":"DGS2"
+},
+
+"sales": {
+    "0": 1000000,
+    "1": 796000,
+    "2": 660000,
+    "3": 600000,
+    "4": 580000,
+    "5": 500000,
+    "6": 448000,
+    "7": 400000,
+    "8": 343000,
+    "9": 275000,
+    "10": 241000,
+    "11": 149000
+}
+       
+
+}
+
+
+
+
