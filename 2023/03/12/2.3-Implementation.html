@@ -149,6 +149,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="c1"># student-developed procedure update_progress, includes sequencing, selection, and iteration.</span>
 <span class="k">def</span> <span class="nf">update_progress</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">blanks</span><span class="p">,</span> <span class="n">progress</span><span class="p">):</span>
@@ -174,7 +175,7 @@ window.onload = wrap_img;
 <span class="k">while</span> <span class="n">lives</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">if</span> <span class="s2">""</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">progress</span><span class="p">)</span> <span class="o">==</span> <span class="n">word</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"You Win!"</span><span class="p">)</span>
-        <span class="n">quit</span><span class="p">()</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">blanks</span><span class="p">))</span>
     <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a letter."</span><span class="p">)</span>
 
@@ -189,7 +190,7 @@ window.onload = wrap_img;
 
 <span class="k">if</span> <span class="n">lives</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You Lost! The word was </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
-    <span class="n">quit</span><span class="p">()</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -203,31 +204,50 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_ _ _ _ _ _ _ _ 
-Sorry! The letter c is not in the word.
+The letter  is in the word
 _ _ _ _ _ _ _ _ 
-The letter r is in the word
-_ _ _ _ r _ _ _ 
-Sorry! The letter d is not in the word.
-_ _ _ _ r _ _ _ 
-The letter g is in the word
-_ _ g _ r _ _ _ 
-Sorry! The letter p is not in the word.
-_ _ g _ r _ _ _ 
+Sorry! The letter g is not in the word.
+_ _ _ _ _ _ _ _ 
 Sorry! The letter a is not in the word.
-_ _ g _ r _ _ _ 
-Sorry! The letter e is not in the word.
-_ _ g _ r _ _ _ 
+_ _ _ _ _ _ _ _ 
+The letter e is in the word
+_ _ _ e _ e _ _ 
 The letter i is in the word
-_ i g _ r _ _ _ 
-The letter o is in the word
-_ i g o r o _ _ 
-The letter v is in the word
-v i g o r o _ _ 
-The letter u is in the word
-v i g o r o u _ 
+i _ _ e _ e _ _ 
+Sorry! The letter o is not in the word.
+i _ _ e _ e _ _ 
+Sorry! The letter u is not in the word.
+i _ _ e _ e _ _ 
+The letter n is in the word
+i n _ e _ e _ _ 
+Sorry! The letter m is not in the word.
+i n _ e _ e _ _ 
+The letter t is in the word
+i n t e _ e _ t 
+The letter r is in the word
+i n t e r e _ t 
 The letter s is in the word
 You Win!
-v i g o r o u s 
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+An exception has occurred, use %tb to see the full traceback.
+
+<span class="ansi-red-fg">SystemExit</span>
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/emaad/anaconda3/lib/python3.9/site-packages/IPython/core/interactiveshell.py:3377: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.
+  warn("To exit: use 'exit', 'quit', or Ctrl-D.", stacklevel=1)
 </pre>
 </div>
 </div>
