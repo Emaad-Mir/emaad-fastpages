@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      18 min read
     
 </span></p>
 
@@ -129,7 +129,14 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Reading-users-table-in-sqlite.db">Reading users table in sqlite.db </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#My-Own-Database">My Own Database </a></li>
+<li class="toc-entry toc-h1"><a href="#My-Own-Database">My Own Database </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Create">Create </a></li>
+<li class="toc-entry toc-h2"><a href="#Read">Read </a></li>
+<li class="toc-entry toc-h2"><a href="#Update">Update </a></li>
+<li class="toc-entry toc-h2"><a href="#Delete">Delete </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a></li>
 </ul><!--
 #################################################
@@ -1031,6 +1038,15 @@ Records exist uid Legend of Zelda: Tears of the Kingdom, or error.
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create">
+<a class="anchor" href="#Create" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create<a class="anchor-link" href="#Create"> </a>
+</h2>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1093,6 +1109,216 @@ Records exist uid Legend of Zelda: Tears of the Kingdom, or error.
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created
  {'id': 3, 'name': 'Mario Kart Wii', 'price': 32.47, 'release_date': datetime.date(2008, 4, 10), 'developer': 'Nintendo', 'publisher': 'Nintendo'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Read">
+<a class="anchor" href="#Read" aria-hidden="true"><span class="octicon octicon-link"></span></a>Read<a class="anchor-link" href="#Read"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SQLAlchemy extracts all users from database, turns each user into JSON</span>
+<span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="n">Game</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">game</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">game</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># "List Comprehensions", for each user add user.read() to list</span>
+    <span class="k">return</span> <span class="n">json_ready</span>
+
+<span class="n">read</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[{'id': 1,
+  'name': 'Mario Party 9',
+  'price': 169.0,
+  'release_date': datetime.date(2012, 2, 3),
+  'developer': 'NDcube',
+  'publisher': 'Nintendo'},
+ {'id': 2,
+  'name': 'Legend of Zelda: Tears of the Kingdom',
+  'price': 69.99,
+  'release_date': datetime.date(2023, 5, 12),
+  'developer': 'Nintendo Entertaining Planning and Development',
+  'publisher': 'Nintendo'}]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Update">
+<a class="anchor" href="#Update" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update<a class="anchor-link" href="#Update"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">():</span>
+    <span class="c1"># find the game to update</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the name of the game to update: "</span><span class="p">)</span>
+    <span class="n">game</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">game</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Game not found"</span><span class="p">)</span>
+        <span class="k">return</span>
+    
+    <span class="c1"># print the current values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Current values:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">game</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    
+    <span class="c1"># prompt the user for new values, allowing them to skip</span>
+    <span class="n">new_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Enter a new name [</span><span class="si">{</span><span class="n">game</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">]: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">new_name</span><span class="p">:</span>
+        <span class="n">game</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">new_name</span>
+    
+    <span class="n">new_price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Enter a new price [</span><span class="si">{</span><span class="n">game</span><span class="o">.</span><span class="n">price</span><span class="si">}</span><span class="s2">]: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">new_price</span><span class="p">:</span>
+        <span class="n">game</span><span class="o">.</span><span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">new_price</span><span class="p">)</span>
+    
+    <span class="n">new_developer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Enter a new developer [</span><span class="si">{</span><span class="n">game</span><span class="o">.</span><span class="n">developer</span><span class="si">}</span><span class="s2">]: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">new_developer</span><span class="p">:</span>
+        <span class="n">game</span><span class="o">.</span><span class="n">developer</span> <span class="o">=</span> <span class="n">new_developer</span>
+    
+    <span class="n">new_publisher</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Enter a new publisher [</span><span class="si">{</span><span class="n">game</span><span class="o">.</span><span class="n">publisher</span><span class="si">}</span><span class="s2">]: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">new_publisher</span><span class="p">:</span>
+        <span class="n">game</span><span class="o">.</span><span class="n">publisher</span> <span class="o">=</span> <span class="n">new_publisher</span>
+    
+    <span class="n">new_release_date</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Enter a new release date (YYYY-MM-DD) [</span><span class="si">{</span><span class="n">game</span><span class="o">.</span><span class="n">release_date</span><span class="si">}</span><span class="s2">]: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">new_release_date</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">game</span><span class="o">.</span><span class="n">release_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">new_release_date</span><span class="p">,</span> <span class="s1">'%Y-%m-</span><span class="si">%d</span><span class="s1">'</span><span class="p">)</span><span class="o">.</span><span class="n">date</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid date format. Date not updated."</span><span class="p">)</span>
+    
+    <span class="c1"># update the game in the database</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">updated_game</span> <span class="o">=</span> <span class="n">game</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Updated values:"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">updated_game</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Error updating game"</span><span class="p">)</span>
+<span class="n">update</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Current values:
+{'id': 3, 'name': 'Mario Kart Wii', 'price': 32.47, 'release_date': datetime.date(2008, 4, 10), 'developer': 'Nintendo', 'publisher': 'Nintendo'}
+Updated values:
+{'id': 3, 'name': 'Mario Kart Wii', 'price': 34.99, 'release_date': datetime.date(2008, 4, 10), 'developer': 'Nintendo', 'publisher': 'Nintendo'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Delete">
+<a class="anchor" href="#Delete" aria-hidden="true"><span class="octicon octicon-link"></span></a>Delete<a class="anchor-link" href="#Delete"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">delete</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the name of the game to delete:"</span><span class="p">)</span>
+    <span class="n">game</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Found</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">game</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Game with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> not found"</span><span class="p">)</span>
+        <span class="k">return</span>
+    
+    <span class="c1"># confirm deletion</span>
+    <span class="n">confirm</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Are you sure you want to delete this game? (y/n)"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">confirm</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'y'</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">game</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Game with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> deleted"</span><span class="p">)</span>
+            <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object not deleted</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Unknown error deleting game with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Deletion of game with name </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> cancelled"</span><span class="p">)</span>
+
+<span class="n">delete</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Found
+ {'id': 3, 'name': 'Mario Kart Wii', 'price': 32.47, 'release_date': datetime.date(2008, 4, 10), 'developer': 'Nintendo', 'publisher': 'Nintendo'}
+Game with name Mario Kart Wii deleted
 </pre>
 </div>
 </div>
