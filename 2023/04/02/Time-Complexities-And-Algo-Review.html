@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Space and Time Complexities and Sorting Algorithms Review | Emaad’s fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Space and Time Complexities and Sorting Algorithms Review" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Review of space and time complexities and sorting algorithms for the 5/8 AP Exam!" />
+<meta property="og:description" content="Review of space and time complexities and sorting algorithms for the 5/8 AP Exam!" />
+<link rel="canonical" href="https://emaad-mir.github.io/emaad-fastpages/2023/04/02/Time-Complexities-And-Algo-Review.html" />
+<meta property="og:url" content="https://emaad-mir.github.io/emaad-fastpages/2023/04/02/Time-Complexities-And-Algo-Review.html" />
+<meta property="og:site_name" content="Emaad’s fastpages" />
+<meta property="og:image" content="https://emaad-mir.github.io/emaad-fastpages/images/college-board-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://emaad-mir.github.io/emaad-fastpages/images/college-board-logo.png" />
+<meta property="twitter:title" content="Space and Time Complexities and Sorting Algorithms Review" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-02T00:00:00-05:00","datePublished":"2023-04-02T00:00:00-05:00","description":"Review of space and time complexities and sorting algorithms for the 5/8 AP Exam!","headline":"Space and Time Complexities and Sorting Algorithms Review","image":"https://emaad-mir.github.io/emaad-fastpages/images/college-board-logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://emaad-mir.github.io/emaad-fastpages/2023/04/02/Time-Complexities-And-Algo-Review.html"},"url":"https://emaad-mir.github.io/emaad-fastpages/2023/04/02/Time-Complexities-And-Algo-Review.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/emaad-fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://emaad-mir.github.io/emaad-fastpages/feed.xml" title="Emaad's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/emaad-fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/emaad-fastpages/">Emaad&#39;s fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/emaad-fastpages/timebox/">Time Box</a><a class="page-link" href="/emaad-fastpages/about/">About Me</a><a class="page-link" href="/emaad-fastpages/javascript/">JavaScript</a><a class="page-link" href="/emaad-fastpages/search/">Search</a><a class="page-link" href="/emaad-fastpages/categories/">Tags</a><a class="page-link" href="/emaad-fastpages/vocab/">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Space and Time Complexities and Sorting Algorithms Review</h1><p class="page-description">Review of space and time complexities and sorting algorithms for the 5/8 AP Exam!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-02T00:00:00-05:00" itemprop="datePublished">
+        Apr 2, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Emaad-Mir/emaad-fastpages/tree/master/_notebooks/2023-04-02-Time-Complexities-And-Algo-Review.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/emaad-fastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Emaad-Mir/emaad-fastpages/master?filepath=_notebooks%2F2023-04-02-Time-Complexities-And-Algo-Review.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/emaad-fastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Emaad-Mir/emaad-fastpages/blob/master/_notebooks/2023-04-02-Time-Complexities-And-Algo-Review.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/emaad-fastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FEmaad-Mir%2Femaad-fastpages%2Fblob%2Fmaster%2F_notebooks%2F2023-04-02-Time-Complexities-And-Algo-Review.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/emaad-fastpages/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Overview-of-This-Blog">Overview of This Blog </a></li>
+<li class="toc-entry toc-h1"><a href="#Time-Complexities">Time Complexities </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Constant:-O(1)">Constant: O(1) </a></li>
+<li class="toc-entry toc-h2"><a href="#Linear:-O(n)">Linear: O(n) </a></li>
+<li class="toc-entry toc-h2"><a href="#Quadratic:-O(n^2)">Quadratic: O(n^2) </a></li>
+<li class="toc-entry toc-h2"><a href="#Logarithmic:-O(logn)">Logarithmic: O(logn) </a></li>
+<li class="toc-entry toc-h2"><a href="#Exponential:-O(2^n)">Exponential: O(2^n) </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Sorting-Algorithms">Sorting Algorithms </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-04-02-Time-Complexities-And-Algo-Review.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Overview-of-This-Blog">
+<a class="anchor" href="#Overview-of-This-Blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview of This Blog<a class="anchor-link" href="#Overview-of-This-Blog"> </a>
+</h1>
+<p>Over the past few weeks through tech talks, we have learned about what space and time complexity is and why it is important as we construct algorithms. Some time complexities are faster (ex. O(n), O(1)), while some add much more time for each extra step or element of a list (ex. O(n^2), O(2^n), etc.). There are also various kinds of sorting algorithms, with some being more efficient than others. This blog serves to review all of these concepts to allow one to get a quick recap of everything that we have learned so far in Data Structures 1.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Time-Complexities">
+<a class="anchor" href="#Time-Complexities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Time Complexities<a class="anchor-link" href="#Time-Complexities"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Constant:-O(1)">
+<a class="anchor" href="#Constant:-O(1)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Constant: O(1)<a class="anchor-link" href="#Constant:-O(1)"> </a>
+</h2>
+<p>This kind of time complexity is probably the easiest one to understand. Constant time complexity is an algorithm that takes the same amount of time to execute regardless of the number of inputs/elements of the list. For example, if we wanted to find the fourth element of a list of numbers, we can do so as shown in the code below:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span><span class="mi">29</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="mi">69</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">206</span><span class="p">]</span> <span class="c1"># list of numbers</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>69
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We could make the list smaller or larger, but it will not change the amount of time that it takes to execute the program.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Linear:-O(n)">
+<a class="anchor" href="#Linear:-O(n)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linear: O(n)<a class="anchor-link" href="#Linear:-O(n)"> </a>
+</h2>
+<p>Linear time complexity is when the time it takes for an algorithm to execute increase linearly with the number of inputs/elements of a list used. For this time complexity and the rest of the ones below, the amount of inputs used does matter, unlike the constant time algorithm. For example, if we wanted to iterate through a list of numbers to check if they are greater than a certain value and to print only those numbers, the more elements that we use, the longer the program will take to execute.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">111</span><span class="p">,</span><span class="mi">69420</span><span class="p">,</span><span class="mi">525</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">display</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">num_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>150
+111
+525
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>While the difference in time is not visible (since the list is only 8 elements), the larger and larger we make this list, the more time that it will take for the computer to iterate through each number of the list to see which ones are greater than 100 but less than 100.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Quadratic:-O(n^2)">
+<a class="anchor" href="#Quadratic:-O(n%5E2)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quadratic: O(n^2)<a class="anchor-link" href="#Quadratic:-O(n%5E2)"> </a>
+</h2>
+<p>O(n^2) time complexity is an algorithm in which the time that it takes to execute increases by the number of inputs added squared. For example, if the input array/list has 10 elements, it will do 100 operations. If the input array/list has 2 elements, will do 4 operations, and if the list has 10 elements, it will do 100 operations, and so on. Clearly, this kind of time complexity is not the most efficient, as it adds a lot more operations and therefore execution time for each extra element.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span><span class="mi">102</span><span class="p">,</span><span class="mi">301</span><span class="p">]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">num_list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+0
+1
+2
+0
+1
+2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As you can see, the outer loop containing "i" will run 3 times since there are 3 elements in the list. However, since we also have a nested for loop within that loop (j), the inner loop will also run 3 times, thus printing out the length of the list from 0 to 2 3 times (9 operations). Even though it may not look like a big difference now, if we continue to increase the size of the list, it will get to the point in which we will lose all patience because of how long it will take.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Logarithmic:-O(logn)">
+<a class="anchor" href="#Logarithmic:-O(logn)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logarithmic: O(logn)<a class="anchor-link" href="#Logarithmic:-O(logn)"> </a>
+</h2>
+<p>Logarithmic time complexity is probably one of the more faster time complexities of the ones mentioned so far (behind constant). With logarithmic time complexity, as the input/list size became bigger, the number of operations (i.e. time) grows very slowly, with n representing the number of elements. For example, one could show a binary search algorithm to demonstrate logarithmic time complexity, as shown below:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">num_list</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">):</span>
+    <span class="c1"># Repeat until the pointers low and high meet each other</span>
+    <span class="k">while</span> <span class="n">low</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">:</span>
+
+        <span class="n">mid</span> <span class="o">=</span> <span class="n">low</span> <span class="o">+</span> <span class="p">(</span><span class="n">high</span> <span class="o">-</span> <span class="n">low</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+
+        <span class="k">if</span> <span class="n">num_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">mid</span>
+
+        <span class="k">elif</span> <span class="n">num_list</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span>
+            <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="n">num_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">203</span><span class="p">,</span><span class="mi">532</span><span class="p">,</span><span class="mi">69420</span><span class="p">,</span><span class="mi">102710</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter any number from the number list: 12,100,203,532,69420,102710"</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'You inputted </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">binary_search</span><span class="p">(</span><span class="n">num_list</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">num_list</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1"> is present at index </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1"> is not present'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You inputted 532
+532 is present at index 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It is also worth noting that the number of times that the program has to iterate through the program to find x is equal to the log base 2 of the closest next power of 2 to the length of the list. In this case, since the length of the list was 6, log base 2 of 6 is closest to 3, therefore the program had to guess 3 times before arriving at x, which was 532 here.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exponential:-O(2^n)">
+<a class="anchor" href="#Exponential:-O(2%5En)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exponential: O(2^n)<a class="anchor-link" href="#Exponential:-O(2%5En)"> </a>
+</h2>
+<p>Exponential time complexity is probably something you can imagine. As the number of elements n increases, the number of operations performed (i.e. time) increases exponentially. Obviously, this kind of time complexity is highly inefficient, as for every one new element, the time increases dramatically compared to linear or quadratic. One example of an exponential time complexity program is a program that finds the number of possible permutations of a list of numbers, as demonstrated below:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="n">num_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="n">permutations</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">num_list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">permutations</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 2, 3, 4)
+(1, 2, 4, 3)
+(1, 3, 2, 4)
+(1, 3, 4, 2)
+(1, 4, 2, 3)
+(1, 4, 3, 2)
+(2, 1, 3, 4)
+(2, 1, 4, 3)
+(2, 3, 1, 4)
+(2, 3, 4, 1)
+(2, 4, 1, 3)
+(2, 4, 3, 1)
+(3, 1, 2, 4)
+(3, 1, 4, 2)
+(3, 2, 1, 4)
+(3, 2, 4, 1)
+(3, 4, 1, 2)
+(3, 4, 2, 1)
+(4, 1, 2, 3)
+(4, 1, 3, 2)
+(4, 2, 1, 3)
+(4, 2, 3, 1)
+(4, 3, 1, 2)
+(4, 3, 2, 1)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we increase the number of inputs in the number list, the program will take more and more time to generate the list of all possible permutations of the original list.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Sorting-Algorithms">
+<a class="anchor" href="#Sorting-Algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sorting Algorithms<a class="anchor-link" href="#Sorting-Algorithms"> </a>
+</h1>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/emaad-fastpages/2023/04/02/Time-Complexities-And-Algo-Review.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/emaad-fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://emaad-mir.github.io/emaad-fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/emaad-fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
