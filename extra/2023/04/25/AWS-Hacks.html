@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>AWS (First Lesson 4/24) Hacks | Emaad’s fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="AWS (First Lesson 4/24) Hacks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This blog includes all of the hacks for the very first lesson (AWS) for Period 4 Yeung." />
+<meta property="og:description" content="This blog includes all of the hacks for the very first lesson (AWS) for Period 4 Yeung." />
+<link rel="canonical" href="https://emaad-mir.github.io/emaad-fastpages/extra/2023/04/25/AWS-Hacks.html" />
+<meta property="og:url" content="https://emaad-mir.github.io/emaad-fastpages/extra/2023/04/25/AWS-Hacks.html" />
+<meta property="og:site_name" content="Emaad’s fastpages" />
+<meta property="og:image" content="https://emaad-mir.github.io/emaad-fastpages/images/college-board-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-25T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://emaad-mir.github.io/emaad-fastpages/images/college-board-logo.png" />
+<meta property="twitter:title" content="AWS (First Lesson 4/24) Hacks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-25T00:00:00-05:00","datePublished":"2023-04-25T00:00:00-05:00","description":"This blog includes all of the hacks for the very first lesson (AWS) for Period 4 Yeung.","headline":"AWS (First Lesson 4/24) Hacks","image":"https://emaad-mir.github.io/emaad-fastpages/images/college-board-logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://emaad-mir.github.io/emaad-fastpages/extra/2023/04/25/AWS-Hacks.html"},"url":"https://emaad-mir.github.io/emaad-fastpages/extra/2023/04/25/AWS-Hacks.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/emaad-fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://emaad-mir.github.io/emaad-fastpages/feed.xml" title="Emaad's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/emaad-fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/emaad-fastpages/">Emaad&#39;s fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/emaad-fastpages/timebox/">Time Box</a><a class="page-link" href="/emaad-fastpages/about/">About Me</a><a class="page-link" href="/emaad-fastpages/javascript/">JavaScript</a><a class="page-link" href="/emaad-fastpages/search/">Search</a><a class="page-link" href="/emaad-fastpages/categories/">Tags</a><a class="page-link" href="/emaad-fastpages/vocab/">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">AWS (First Lesson 4/24) Hacks</h1><p class="page-description">This blog includes all of the hacks for the very first lesson (AWS) for Period 4 Yeung.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-25T00:00:00-05:00" itemprop="datePublished">
+        Apr 25, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      12 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/emaad-fastpages/categories/#extra">extra</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#kasm-hacks">KASM Hacks</a></li>
+<li class="toc-entry toc-h1"><a href="#aws-databases-hacks">AWS Databases Hacks</a></li>
+<li class="toc-entry toc-h1"><a href="#duckdns-and-aws-hacks">DuckDNS and AWS Hacks</a></li>
+<li class="toc-entry toc-h1"><a href="#certbot-hacks">Certbot Hacks</a></li>
+</ul><h1 id="kasm-hacks">
+<a class="anchor" href="#kasm-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>KASM Hacks</h1>
+
+<p>(1) In 3-4 sentences, please explain the significance of virtual desktops and KASM. How can virtual desktops such as these be utilized in our AP CSP environment? (0.45)</p>
+
+<p>KASM Workspaces essentially allows us to stream applications from containers (for our class, Docker containers with the “make server” command). KASM is very versatile in terms of its functionality, as you can get access desktop access in a small amount of time from any device and anywhere around the world. Furthermore, KASM has many advantages to its functionality, one being that it is very scalable. Another great thing about KASM is that it is very easy to access, as the web browser that you log in from doesn’t matter and whatever you are deploying can be hosted anywhere. Another perk of KASM, which is probably the most important, is that it has very well-managed security, with 2 factor authentication (2FA), security groups, logging, and web filtering. Overall, KASM Workspaces has many great functionalities and is definitely a very efficient way of hosting applications, especially for a class like CSP.</p>
+
+<p>(2) Attempt to work through the KASM setup with your team. Attach two screenshots to show that you have successfully gone through the setup: The first screenshot of KASM generating your credentials, and the second screenshot of the KASM workspace once you have logged in. (0.45)</p>
+
+<p><img src="/emaad-fastpages/images/ss1kasm.png" alt=""></p>
+
+<h1 id="aws-databases-hacks">
+<a class="anchor" href="#aws-databases-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>AWS Databases Hacks</h1>
+
+<p><strong>Quiz 1 Questions and Answers:</strong></p>
+
+<p>Which of the following is not an AWS database option?</p>
+
+<p>A. Amazon RDS</p>
+
+<p>B. Amazon Neptune</p>
+
+<p>C. SQLite</p>
+
+<p>D. Amazon DynamoDB</p>
+
+<p>Answer: C</p>
+
+<p>Which of the following is a file-based, lightweight RDBMS?</p>
+
+<p>A. Amazon RDS</p>
+
+<p>B. Amazon Neptune</p>
+
+<p>C Amazon DynamoDB</p>
+
+<p>D. SQLite</p>
+
+<p>Answer: D</p>
+
+<p>Which AWS service enables you to store and query highly connected datasets?</p>
+
+<p>A. Amazon Relational Database Service (RDS)</p>
+
+<p>B. Amazon DynamoDB</p>
+
+<p>C. Amazon Neptune</p>
+
+<p>D. Amazon DocumentDB</p>
+
+<p>Answer: C</p>
+
+<p>Answers: C,D,C</p>
+
+<p><strong>Quiz 2 Questions and Answers:</strong></p>
+
+<p>What is the main difference between relational and non-relational databases?</p>
+
+<p>A. Relational databases are only used for structured data, while non-relational databases are only used for unstructured data.</p>
+
+<p>B. Relational databases can easily handle high data volumes, while non-relational databases cannot.</p>
+
+<p>C. Relational databases are based on tables and use SQL, while non-relational databases are based on collections and use JSON-like documents.</p>
+
+<p>D. Relational databases are more expensive than non-relational databases.</p>
+
+<p>Answer: A</p>
+
+<p>Which AWS database service is best suited for applications that require low-latency speed?</p>
+
+<p>A. Amazon ElastiCache</p>
+
+<p>B. Amazon Neptune</p>
+
+<p>C. Amazon DocumentDB</p>
+
+<p>D. Amazon RDS</p>
+
+<p>Answer: A</p>
+
+<p>What is the purpose of the code example provided in the lesson?</p>
+
+<p>A. To demonstrate how to create a table in Amazon Aurora.</p>
+
+<p>B. To show how to query data from a DynamoDB table.</p>
+
+<p>C. To provide an example of how to connect to a database instance in RDS using Python.</p>
+
+<p>D. To showcase how to insert data into a MySQL table.</p>
+
+<p>Answer: C</p>
+
+<p>Answers: A,A,C</p>
+
+<h1 id="duckdns-and-aws-hacks">
+<a class="anchor" href="#duckdns-and-aws-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>DuckDNS and AWS Hacks</h1>
+
+<p>HACK 1: Create a diagram (Canva). What are the pros and cons of using DuckDNS? Show a diagram of an application running on AWS using a DuckDNS system.</p>
+
+<p>Pros of using DuckDNS:</p>
+
+<ul>
+  <li>It’s a <strong>free</strong> domain service that allows users to assign a domain name specific to their website</li>
+  <li>It allows us to access a device or service using a static hostname, which is far more convenient</li>
+  <li>It uses HTTPS encryption to protect user data.</li>
+  <li>It can be used to create custom domain names for your network.</li>
+</ul>
+
+<p>Cons of using DuckDNS:</p>
+
+<ul>
+  <li>Relies on the stability of your internet connection, so if connection drops, one cannot access their network remotely</li>
+  <li>It may not be suitable for larger or more complex networks or devices that require more advanced features</li>
+</ul>
+
+<p>HACK 2: Write a reflection. Why do we use DNS? How does DuckDNS work? What makes DuckDNS unique? How is DuckDNS useful for our projects? What are the steps to setup DuckDNS?</p>
+
+<p>DuckDNS is a free dynamic DNS service that allows users to assign a domain name to a dynamic IP address It works by automatically updating the DNS records for a custom domain name that one chooses, such as “mywebsite.duckdns.org”, with the current IP address of their home network. This means that even if one’s ISP assigns their IP address, they can still access their home network using the same domain name. DuckDNS is unique in that it is a free and easy-to-use service and can be used to create custom domain names for your network, which sharply contrasts with other DNS services such as Freenom, which requires people to pay money at times. It’s useful for projects that require remote access to a home network, such as running a personal web server (i.e. our Flask Python Web Application) or accessing home automation devices. To set up DuckDNS, you need to…</p>
+
+<p>(1) Sign in with your DuckDNS account by selecting “Sign in with Github”
+(2) Creating a subdomain by entering a unique name and clicking the “add domain” button
+(3) Under “current ip”, change the IP address into the IP address that you would like to access (ex. the public IP address on the class EC2 instance)
+(4) After entering the IP address to be whatever you want, click the “update ip” button to confirm the change
+(5) Now you can use your unique DuckDNS subdomain to access your web application from the Internet!</p>
+
+<p>HACK 4: In 2-3 complete sentences, talk about any outdated Nginx/Docker functionalities that may need to be addressed or any confusions you may have in regards to the deployment process from Trimesters 1 and 2.</p>
+
+<p>While I currently do not have any confusions in regards to the deployment process from Trimesters 1 and 2 (as someone who did it both trimesters), I do remember some things that were especially confusing to me as I was learning about it and making progress on it over time. For example, I would have a difficult time understanding the difference between the nginx sites-enabled directory and the nginx sites-available directory, and I used to think that they were just the same file contents but with a different file name, so I assumed that the steps could be applied to either file. However, I learned that this was not the case the hard way, as our web application ended up not working and I had to redo the entire deployment process from scratch. Another thing that was especially confusing to me was that sometimes, in the nginx directories, there would be files that had a red colored font to them, and they would appear over and over again even after deleting them each time. This was obviously due to the fact that everyone was using the same EC2 instance, so as other groups were working on the deployment process, the red file would end up showing up for all of the groups.</p>
+
+<p>HACK 5: Create a Venn Diagram comparing Nginx with Lighttpd.</p>
+
+<p><img src="/emaad-fastpages/images/nginxlighttdiagram.png" alt=""></p>
+
+<p>HACK 6: Complete the Python quiz and attach your output from the notebook (should be done once you do the quiz.)</p>
+
+<p>Below is the output of the quiz:</p>
+
+<p>’’’</p>
+
+<p>Hello, emaad running /home/emaad/anaconda3/bin/python
+You will be asked 11 questions.
+Are you ready to take a test! Press Enter key to begin. Best of luck :)
+Question 1 : What does Domain Name Server represent?
+DNS is correct! Good Job!
+Question 2 : What does this Represent: Amazon Web Services, which is a cloud computing platform provided by Amazon.
+AWS is correct! Good Job!
+Question 3 : What is the first Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+1 is correct! Good Job!
+Question 4 : What is the third Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+3 is correct! Good Job!
+Question 5 : What is the fourth Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+4 is correct! Good Job!
+Question 6 : What is the second Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+2 is correct! Good Job!
+Question 7 : What files are you supposed to edit after finishing the first steps of setting up the server and cloning it within the AWS Server? 1: Edit the docker files and docker.yml, 2: Edit the main.py file to change the characteristcs.
+1 is correct! Good Job!
+Question 8 : What is the first step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+1 is correct! Good Job!
+Question 9 : What is the second step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+3 is correct! Good Job!
+Question 10 : What is the third step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+2 is correct! Good Job!
+Question 11 : What is the fourth step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+4 is correct! Good Job!
+emaad you scored 11/11
+Total Percentage: 100.00%</p>
+
+<p>’’’</p>
+
+<h1 id="certbot-hacks">
+<a class="anchor" href="#certbot-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Certbot Hacks</h1>
+
+<p>(1) Follow the instructions below and provide a full screenshot of all terminal commands after and including sudo certbot –apache all the way until it asks for the domain you want to secure. At this point you can take a screenshot and cancel the process. If you choose to continue the setup process and get Certbot fully working and show a before and after screenshot of your domain with http amd https connection we will grant extra credit points on hacks, or make up for lost points in other areas.</p>
+
+<p><img src="/emaad-fastpages/images/certbotproof.png" alt=""></p>
+
+<p>(2) Research and compare the security features of OpenSSL and LibreSSL, and write about the recent vulnerabilities within it. Write about your research in a fastpages blog post. It can be the same post that has your screenshot for the Certbot Hacks.</p>
+
+<p>OpenSSL and LibreSSL are both open-source implementations of the SSL and TLS protocols, which are used to encrypt and secure data communications over the internet.</p>
+
+<p>OpenSSL:</p>
+
+<ul>
+  <li>Supports a wide range of cryptographic algorithms, including AES, RSA, and SHA</li>
+  <li>Has a robust security audit process and is regularly updated to address any security issues found</li>
+  <li>Offers a variety of security options, such as secure random number generation, certificate validation, and OCSP stapling</li>
+</ul>
+
+<p>LibreSSL:</p>
+<ul>
+  <li>Created in response to a number of security issues found in OpenSSL in 2014</li>
+  <li>Strives to be a more secure and reliable version of OpenSSL, with a focus on removing old code</li>
+  <li>Offers improved security features, such as memory allocation hardening, safer curve selection, and a stricter codebase</li>
+</ul>
+
+<p>While OpenSSL and LibreSSL have their very fascinating and important security features, they have both have recently had their share of vulnerabilities.</p>
+
+<p>For example, with OpenSSL 3.0-3.0.6 (released in September 2021), two quite recent vulnerabilities that have erupted are the CVE-2022-3786 and CVE-2022-3602 vulnerabilities that involve email address buffer overflow and forces users to upgrade to OpenSSL 3.0. One very recent vulnerability in the LibreSSL took place a few weeks ago, called CVE-2022-48437. According to the description of the vulnerability, it entailed “[a]n issue” that  “was discovered in x509/x509_verify.c in LibreSSL before 3.6.1, and in OpenBSD before 7.2 errata 001. x509_verify_ctx_add_chain does not store errors that occur during leaf certificate verification, and therefore an incorrect error is returned. This behavior occurs when there is an installed verification callback that instructs the verifier to continue upon detecting an invalid certificate.”</p>
+
+<p>In summary, OpenSSL and LibreSSL are both widely used and respected implementations of SSL/TLS protocols, offering a range of security features to protect data communications. However, like any software, they are not 100% immune to vulnerabilities despite these security measures, and it is important to stay up to date with the latest security updates to ensure the safe use of computer systems in our daily lives.</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Emaad-Mir/emaad-fastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/emaad-fastpages/extra/2023/04/25/AWS-Hacks.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/emaad-fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://emaad-mir.github.io/emaad-fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/emaad-fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
