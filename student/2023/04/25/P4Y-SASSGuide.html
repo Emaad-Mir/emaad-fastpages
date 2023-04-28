@@ -180,6 +180,33 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/fastpages-styles.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode1.css" id="theme-link">
+
+<p></p>
+    <button id="theme-toggle">Toggle Theme</button>
+    <script>
+        const toggleButton = document.querySelector('#theme-toggle');
+        const themeLink = document.querySelector('#theme-link');
+        toggleButton.addEventListener('click', () => {
+            if (themeLink.getAttribute('href') === '../assets/css/fastpages-styles.css') {
+                themeLink.setAttribute('href', '../assets/css/dark-mode1.css');
+            } else {
+                themeLink.setAttribute('href', '../assets/css/fastpages-styles.css');
+            }
+        });
+    </script>
+
+&lt;/html&gt;
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Classwork:">
 <a class="anchor" href="#Classwork:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classwork:<a class="anchor-link" href="#Classwork:"> </a>
 </h1>
