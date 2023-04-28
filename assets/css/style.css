@@ -483,7 +483,6 @@ pre code { font-size: 15px !important; }
 p code { font-size: 19px; }
 
 /*-----------------------------------*/
-/*----- ADD YOUR STYLES BELOW -------*/
 html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #121212 !important; }
 
 a { color: #4bbaff !important; }
@@ -519,5 +518,11 @@ canvas { filter: invert(100%); }
 .post-list > li > div { box-shadow: none !important; background-color: #1e1e1e; border: none !important; }
 
 li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; }
+
+body { color: #dede1a; }
+
+h1 { color: #dede1a; }
+
+a { color: #dede1a; }
 
 /*# sourceMappingURL=style.css.map */
