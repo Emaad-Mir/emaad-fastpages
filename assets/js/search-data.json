@@ -912,22 +912,14 @@
   
 
   
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-
+      ,"page9": {
+          "title": "Theme Changer",
+          "content": "Theme Changer . . Toggle Theme &lt;/html&gt; .",
+          "url": "https://emaad-mir.github.io/emaad-fastpages/_pages/themechanger.html",
+          "relUrl": "/_pages/themechanger.html",
+          "date": ""
+      }
+      
   
 
   
@@ -936,7 +928,26 @@
   
 
   
-      ,"page19": {
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+      ,"page20": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://emaad-mir.github.io/emaad-fastpages/robots.txt",
