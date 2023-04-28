@@ -94,67 +94,56 @@ window.onload = wrap_img;
 </body>
 <p>&lt;/html&gt;</p>
 
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../assets/css/fastpages-styles.css" id="default-theme-link" />
-    <link rel="stylesheet" href="../assets/css/dark-mode1.css" id="dark-theme-link" disabled="" />
-    <link rel="stylesheet" href="../assets/css/other-style.css" id="mort-theme-link" disabled="" />
-</head>
-<body>
-    <button id="default-theme-toggle">Default Theme</button>
-    <button id="dark-theme-toggle">Dark Theme</button>
-    <button id="mort-theme-toggle">Mort Theme</button>
-    <script>
-        const defaultToggleButton = document.querySelector('#default-theme-toggle');
-        const darkToggleButton = document.querySelector('#dark-theme-toggle');
-        const mortToggleButton = document.querySelector('#mort-theme-toggle');
-        const defaultThemeLink = document.querySelector('#default-theme-link');
-        const darkThemeLink = document.querySelector('#dark-theme-link');
-        const mortThemeLink = document.querySelector('#mort-theme-link');
-        defaultToggleButton.addEventListener('click', () => {
-            defaultThemeLink.disabled = false;
-            darkThemeLink.disabled = true;
-            mortThemeLink.disabled = true;
-        });
-        darkToggleButton.addEventListener('click', () => {
-            defaultThemeLink.disabled = true;
-            darkThemeLink.disabled = false;
-            mortThemeLink.disabled = true;
-        });
-        mortToggleButton.addEventListener('click', () => {
-            defaultThemeLink.disabled = true;
-            darkThemeLink.disabled = true;
-            mortThemeLink.disabled = false;
-        });
-    </script>
-</body>
-</html>
-
 <p>Hello there!
 <img src="/emaad-fastpages/images/finalbanner.png" alt="" title="https://github.com/Emaad-Mir/emaad-fastpages" /></p>
 
-<p><button type="button" onclick="myFunction()">Change Color</button></p>
-
-<html>
-<head>
 <script>
-    var colors = ["red", "blue", "green","orange","yellow","purple","pink","brown","black"];
-    var colorIndex = 0;
-    function changeColor() {
-        var col = document.getElementById("body");
-        if( colorIndex >= colors.length ) {
-            colorIndex = 0;
-        }
-        col.style.backgroundColor = colors[colorIndex];
-        colorIndex++;
-    }
+
+function black() {
+	document.body.style.backgroundColor="black"
+}
+
+function blue() {
+	document.body.style.backgroundColor="blue"
+}
+
+function green() {
+	document.body.style.backgroundColor="green"
+}
+
+function purple() {
+	document.body.style.backgroundColor="purple"
+}
+
+function red() {
+	document.body.style.backgroundColor="red"
+}
+
+function white() {
+	document.body.style.backgroundColor="white"
+}
+
+function brown() {
+	document.body.style.backgroundColor="brown"
+}
+
+function yellow() {
+	document.body.style.backgroundColor="yellow"
+}
+
+
 </script>
-    <body id="body">
-    <button onclick="changeColor();">Toggle Theme</button>
-    </body>
-&lt;/html
-</head></html>
+
+<form>
+	<input type="button" style="background-color:black" hover="background-color:#3e8e41" value="    " name="B1" onclick="black()" />
+	<input type="button" style="background-color:blue" value="    " name="B2" onclick="blue()" />
+	<input type="button" style="background-color:#ff00ff" value="    " name="B3" onclick="fuchsia()" />
+	<input type="button" style="background-color:green" value="    " name="B4" onclick="green()" />
+	<input type="button" style="background-color:purple" value="    " name="B5" onclick="purple()" />
+	<input type="button" style="background-color:red" value="    " name="B6" onclick="red()" />
+	<input type="button" style="background-color:brown" value="    " name="B10" onclick="brown()" />
+	<input type="button" style="background-color:yellow" value="    " name="B11" onclick="yellow()" />
+</form>
 
 
 
