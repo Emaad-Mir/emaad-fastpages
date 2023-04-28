@@ -11,6 +11,18 @@
 @import "minima/fastpages-dracula-highlight"; 
 /*-----------------------------------*/
 
-/*----- ADD YOUR STYLES BELOW -------*/
-
 @import "minima/dark-mode";
+
+$font-color: #dede1a;
+
+body {
+  color: $my-font-color;
+}
+
+h1 {
+  color: $my-font-color;
+}
+
+a {
+  color: $my-font-color;
+}
