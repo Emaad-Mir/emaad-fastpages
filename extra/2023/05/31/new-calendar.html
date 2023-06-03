@@ -107,6 +107,7 @@ window.onload = wrap_img;
   table, th, td {
     border: 1px solid lightblue;
     border-collapse: collapse;
+    
   }
   table {
       width: 70vw;
@@ -116,10 +117,12 @@ window.onload = wrap_img;
   td {
       text-align: left;
       vertical-align: top;
+      
   }
   .width {
       column-width: 100px;
   }
+
   .month {
     background-color: rgb(245, 206, 143);
     border: 5px double orange;
@@ -135,6 +138,40 @@ window.onload = wrap_img;
     border: 5px double green;
     width: 25%
   }
+
+  .clear-events-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.clear-events-button {
+  background-color: blue !important; /* Change the color as desired */
+  color: black;
+  border: 2px solid black;
+  font-size: 30px; /* Increase the font size as desired */
+  padding: 10px 20px; /* Increase the padding as desired */
+}
+
+.add-event-button {
+  background-color: green !important;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.edit-event-button {
+  background-color: rgb(102, 102, 6) !important;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.remove-event-button {
+  background-color: red !important;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+}
 </style>
     
 
@@ -322,8 +359,28 @@ window.onload = wrap_img;
   <form autocomplete="off" id="form">
     <input class="day" type="date" name="date" id="date-input" required="">
     <input class="event" type="text" name="title" placeholder="Event (e.g. Picnic)" id="event-input" required="">
-    <input type="submit" onclick="addEvent()" value="Add An Event">
+    <input type="submit" onclick="addEvent()" value="Add An Event" class="add-event-button">
   </form>
+
+  <form autocomplete="off" id="form1">
+    <input class="day" type="date" name="date" id="date-of-event-to-update-input" required="">
+    <input class="event" type="text" name="title" placeholder="Original Event Name (e.g. Picnic)" id="event-to-update-input" required="">
+    <input class="event" type="text" name="title" placeholder="New Event Name (e.g. Party)" id="new-event-input" required="">
+    <input type="submit" onclick="editEvent()" value="Edit An Event" class="edit-event-button">
+  </form>
+
+   <form autocomplete="off" id="form2">
+    <input class="day" type="date" name="date" id="date-of-event-to-delete-input" required="">
+    <input class="event" type="text" name="title" placeholder="Event (e.g. Picnic)" id="event-to-delete-input" required="">
+    <input type="submit" onclick="removeEvent()" value="Remove An Event" class="remove-event-button">
+  </form>
+
+
+  <div class="clear-events-container">
+    <form autocomplete="off" id="form3">
+      <input type="submit" onclick="clearEvents()" value="Clear All Events" class="clear-events-button">
+    </form>
+  </div>
 
 <script>
 
@@ -379,7 +436,93 @@ function getEvents(){
     }
 
 }
+
 getEvents();
+
+function removeEvent() {
+  const eventDesc = document.getElementById("event-to-delete-input").value;
+
+  if (!eventDesc) {
+    return;
+  }
+
+  for (let i = 1; i <= 30; i++) {
+    const dateKey = "06-" + (i < 10 ? "0" + i.toString() : i.toString());
+    let currentData = JSON.parse(localStorage.getItem(dateKey));
+
+    if (!currentData) {
+      continue;
+    }
+
+    const updatedEvents = currentData.filter((event) => event !== eventDesc);
+
+    if (updatedEvents.length === 0) {
+      localStorage.removeItem(dateKey);
+    } else {
+      localStorage.setItem(dateKey, JSON.stringify(updatedEvents));
+    }
+
+    document.getElementById("day" + (i + 4).toString() + "-title").innerHTML = updatedEvents.join("<br>");
+
+  }
+
+  document.getElementById("event-to-delete-input").value = "";
+
+  getEvents();
+}
+
+function editEvent() {
+  const eventDate = document.getElementById("date-of-event-to-update-input").value;
+  const originalEventDesc = document.getElementById("event-to-update-input").value;
+  const newEventDesc = document.getElementById("new-event-input").value;
+
+  if (!eventDate || !originalEventDesc || !newEventDesc) {
+    return;
+  }
+
+  const dateKey = eventDate.substring(5);
+  let currentData = JSON.parse(localStorage.getItem(dateKey));
+
+  if (!currentData) {
+    return;
+  }
+
+  // Find the index of the event in the events array
+  const eventIndex = currentData.findIndex((event) => event === originalEventDesc);
+
+  if (eventIndex === -1) {
+    return;
+  }
+
+  // Update the event description at the corresponding index
+  currentData[eventIndex] = newEventDesc;
+
+  // Update the events array in the local storage with the updated events
+  localStorage.setItem(dateKey, JSON.stringify(currentData));
+
+  // Clear input fields
+  document.getElementById("date-of-event-to-update-input").value = "";
+  document.getElementById("event-to-update-input").value = "";
+  document.getElementById("new-event-input").value = "";
+
+  // Update the displayed events
+  getEvents();
+}
+
+function clearEvents(){
+  if (localStorage.length === 0) {
+    alert("There are no events to clear.");
+    return;
+  }
+
+  // Ask for confirmation
+  const confirmation = confirm("Are you sure you want to remove all events?");
+  if (confirmation) {
+    // Clear all events from localStorage
+    localStorage.clear();
+    alert("All events have been cleared.");
+  }
+}
 // prepare fetch PUT options, clones with JS Spread Operator (...)
 /* const put_options = {...options, method: 'PUT'}; // clones and replaces method
 
