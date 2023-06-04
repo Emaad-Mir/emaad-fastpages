@@ -146,11 +146,12 @@ window.onload = wrap_img;
 }
 
 .clear-events-button {
-  background-color: blue !important; /* Change the color as desired */
+  background-color: blue !important;
   color: black;
   border: 2px solid black;
-  font-size: 30px; /* Increase the font size as desired */
-  padding: 10px 20px; /* Increase the padding as desired */
+  font-size: 30px; 
+  padding: 10px 20px; 
+  cursor:pointer;
 }
 
 .add-event-button {
@@ -158,6 +159,8 @@ window.onload = wrap_img;
   color: white;
   font-size: 16px;
   padding: 10px 20px;
+  cursor:pointer;
+
 }
 
 .edit-event-button {
@@ -165,6 +168,8 @@ window.onload = wrap_img;
   color: white;
   font-size: 16px;
   padding: 10px 20px;
+  cursor:pointer;
+
 }
 
 .remove-event-button {
@@ -172,7 +177,24 @@ window.onload = wrap_img;
   color: white;
   font-size: 16px;
   padding: 10px 20px;
+  cursor:pointer;
+
+
 }
+
+.refresh-button {
+  background-color: purple !important;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor:pointer;
+}
+
+.refresh-container{
+  text-align: center;
+  margin-top: 20px;
+}
+
 </style>
     
 
@@ -383,6 +405,12 @@ window.onload = wrap_img;
     </form>
   </div>
 
+  <div class="refresh-container">
+    <form autocomplete="off" id="form3">
+      <input type="submit" onclick="refresh()" value="Refresh Page (if needed)" class="refresh-button">
+    </form>
+  </div>
+
 <script>
 
 function addEvent(){
@@ -523,6 +551,11 @@ function clearEvents(){
     localStorage.clear();
     alert("All events have been cleared.");
   }
+}
+
+function refresh(){
+  location.reload();
+
 }
 // prepare fetch PUT options, clones with JS Spread Operator (...)
 /* const put_options = {...options, method: 'PUT'}; // clones and replaces method
